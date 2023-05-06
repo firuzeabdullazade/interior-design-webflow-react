@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Header } from "./app/components/Header/Header";
 import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./app/pages/HomePage/HomePage";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/"></Route>
+          <Route path="/" element = {<HomePage />}></Route>
         </Routes>
       </main>
     </>
