@@ -1,0 +1,177 @@
+@import '../../../variables';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 460px;
+    margin-left: 10px;
+
+    .main-interno {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 11%;
+
+        .interno {
+            display: flex;
+            flex-direction: column;
+            width: 26%;
+            gap: 24px;
+
+            .sub-content {
+                width: 100%;
+                height: 170px;
+                gap: 22px;
+                display: flex;
+                flex-direction: column;
+
+                .logo {
+                    display: flex;
+                    flex-direction: row;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 177px;
+                        height: 45px;
+                    }
+
+                    p {
+                        font-family: $header-font;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 125%;
+                        display: flex;
+                        align-items: center;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                    }
+                }
+
+                .text {
+                    font-family: $common-writing-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 150%;
+                }
+            }
+
+            .icons {
+                width: 52%;
+                display: flex;
+                justify-content: space-around;
+
+                button {
+                    border-style: none;
+                    background-color: #FFFF;
+                }
+            }
+        }
+
+
+        .main-pages {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+
+            p {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 125%;
+                color: rgba(41, 47, 54, 1);
+
+            }
+
+            .pages {
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+
+                .link {
+                    text-decoration: none;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 300%;
+                    color: #4D5053;
+                }
+            }
+        }
+
+        .main-service {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 125%;
+                color: rgba(41, 47, 54, 1);
+
+            }
+
+            .service {
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+
+                .link {
+                    text-decoration: none;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 300%;
+                    color: #4D5053;
+                }
+            }
+        }
+
+        .main-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8%;
+            gap: 26px;
+            width: 22%;
+            height: 296px;
+
+            .contact-title {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 125%;
+                color: #292F36;
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 29px;
+
+            .link {
+                text-decoration: none;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                color: #4D5053;
+            }
+        }
+    }
+}
