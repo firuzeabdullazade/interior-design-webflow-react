@@ -1,0 +1,49 @@
+@import '../../../../../variables';
+
+.work-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+    padding-top: 200px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 52px;
+
+        .head {
+            font-family: $header-font;
+            font-size: 25px;
+            line-height: 31px;
+            color: $text-color;
+
+        }
+
+        .subhead {
+            font-family: $common-writing-font;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            color: #4D5053;
+
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            font-family: $common-writing-font;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            gap: 12px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #4D5053;
+        }
+
+    }
+}
