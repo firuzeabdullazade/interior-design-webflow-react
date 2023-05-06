@@ -21,18 +21,18 @@ export const Footer = () => {
                         </p>
                     </div>
                     <div className="icons">
-                        <button>
+                        <Link to = {""}>
                             <img src={fb} alt="fb" />
-                        </button>
-                        <button>
+                        </Link>
+                        <Link to={''}>
                             <img src={tw} alt="tw" />
-                        </button>
-                        <button>
+                        </Link>
+                        <Link to={''}>
                             <img src={IN} alt="in" />
-                        </button>
-                        <button>
+                        </Link>
+                        <Link to={''}>
                             <img src={insta} alt="insta" />
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="main-pages">
@@ -64,7 +64,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="copyright"></div>
+            <div className="copyright">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</div>
         </footer>
         </>
     )
