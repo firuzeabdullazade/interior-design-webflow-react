@@ -39,18 +39,6 @@ footer {
                         width: 177px;
                         height: 45px;
                     }
-
-                    p {
-                        font-family: $header-font;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 40px;
-                        line-height: 125%;
-                        display: flex;
-                        align-items: center;
-                        margin-block-start: 0;
-                        margin-block-end: 0;
-                    }
                 }
 
                 .text {
@@ -79,28 +67,10 @@ footer {
             flex-direction: column;
             width: 10%;
 
-            p {
-                font-family: $header-font;
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 125%;
-                color: rgba(41, 47, 54, 1);
-
-            }
-
             .pages {
                 display: flex;
                 flex-direction: column;
                 gap: 9px;
-
-                .link {
-                    text-decoration: none;
-                    font-family: $common-writing-font;
-                    font-weight: 400;
-                    font-size: 22px;
-                    line-height: 300%;
-                    color: #4D5053;
-                }
             }
         }
 
@@ -108,28 +78,11 @@ footer {
             display: flex;
             flex-direction: column;
 
-            p {
-                font-family: $header-font;
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 125%;
-                color: rgba(41, 47, 54, 1);
-
-            }
 
             .service {
                 display: flex;
                 flex-direction: column;
                 gap: 9px;
-
-                .link {
-                    text-decoration: none;
-                    font-family: $common-writing-font;
-                    font-weight: 400;
-                    font-size: 22px;
-                    line-height: 300%;
-                    color: #4D5053;
-                }
             }
         }
 
@@ -163,8 +116,17 @@ footer {
             font-family: $common-writing-font;
             font-weight: 400;
             font-size: 22px;
-            line-height: 150%;
+            line-height: 300%;
             color: #4D5053;
+        }
+        
+        p {
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 125%;
+            color: rgba(41, 47, 54, 1);
+
         }
 
     }
