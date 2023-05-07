@@ -1,0 +1,56 @@
+@import '../../../../../variables';
+.joininterno {
+    width: 100%;
+    height: 374px;
+    background: $text-color;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+
+    .sub-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+
+        .title {
+            color: rgba(255, 255, 255, 1);
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 125%;
+            margin-block-start: 80px;
+            margin-block-end: 0;
+        }
+
+        .text {
+            font-family: $common-writing-font;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        }
+    }
+
+    button {
+        width: 17.3%;
+        height: 21.3%;
+        background: #CDA274;
+        font-family:$common-writing-font;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        border-style: none;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: inherit;
+    }
+}
