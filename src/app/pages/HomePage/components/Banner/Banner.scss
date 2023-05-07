@@ -1,70 +1,74 @@
 @import "../../../../../variables";
 
-.intro {
-  position: absolute;
-  width: 567px;
-  left: 840px;
-  top: 374px;
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
+.banner {
+  height: 1042px;
+  width: 100%;
 
-  .content {
+  .intro {
+    position: absolute;
+    width: 567px;
+    left: 840px;
+    top: 374px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-  }
+    gap: 21px;
 
-  .head {
-    font-family: $header-font;
-    font-size: 85px;
-    line-height: 125%;
-    color: $text-color;
-  }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-  .subhead {
-    font-family: $common-writing-font;
-    font-size: 22px;
-    line-height: 150%;
-    color: $second-text-color;
-  }
+    .head {
+      font-family: $header-font;
+      font-size: 85px;
+      line-height: 125%;
+      color: $text-color;
+    }
 
-  button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 26px 48px;
-    gap: 10px;
-    width: 219.14px;
-    height: 75px;
-    background: $text-color;
-    border-radius: 18px;
-    font-family: $common-writing-font;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 125%;
-    color: white;
-    border: 1px solid $text-color;
+    .subhead {
+      font-family: $common-writing-font;
+      font-size: 22px;
+      line-height: 150%;
+      color: $second-text-color;
+    }
 
-    img {
-      width: 15.14px;
-      height: 13.18px;
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 26px 48px;
+      gap: 10px;
+      width: 219.14px;
+      background: $text-color;
+      border-radius: 18px;
+      font-family: $common-writing-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 125%;
+      color: white;
+      border: 1px solid $text-color;
+
+      height: 75px;
+      img {
+        width: 15.14px;
+        height: 13.18px;
+      }
     }
   }
-}
 
-.background {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  padding-left: 480px;
-  padding-top: 45px;
-
-  img {
+  .background {
+    position: absolute;
+    left: 450px;
     width: 1920px;
-    object-fit: cover;
-    height: 1042px;
+    z-index: -1;
+    padding-top: 45px;
+
+    img {
+      width: 1920px;
+      object-fit: cover;
+      height: 1042px;
+    }
   }
 }
