@@ -2,35 +2,14 @@ import './HomePage.scss';
 import { Banner } from './components/Banner/Banner';
 import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { Project } from "./components/Project/Project";
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../store/store';
 
-import firstImage from "../../../assets/images/firstImage.png";
-import secondImage from "../../../assets/images/secondImage.png";
-import thirdImage from "../../../assets/images/thirdImage.png";
-import fourthImage from "../../../assets/images/fourthImage.png";
+
 
 export const HomePage = () => {
-  const projects = [
-    {
-      imageSrc: firstImage,
-      head: "Modern Kitchan",
-    },
-
-    {
-        imageSrc: secondImage,
-        head: "Modern Sideboard",
-    },
-
-    {
-        imageSrc: thirdImage,
-        head: "System Table",
-    },
-
-    {
-        imageSrc: fourthImage,
-        head: "Minimal Livingroom",
-    },
-  ];
-
+  const homePageState = useSelector((state:RootState)=> state.homePage)
+  
   return (
     <>
       <Banner />
@@ -44,7 +23,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div className="grid-projects">
-            {projects.map((project) => (
+            {homePageState.projects.map((project) => (
                 <Project
                 imageSrc = {project.imageSrc}
                 head = {project.head}

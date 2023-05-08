@@ -12,15 +12,13 @@ interface ProjectProps {
 export const Project = (props: ProjectProps) => {
     const { imageSrc, head } = props;
 
-    const projectState = useSelector((state: RootState) => state.project);
-
   return (
     <>
       <div className="grid-project">
-        <img src= {projectState.imageSrc} alt="image" />
+        <img src= {imageSrc} alt="image" />
         <div className="content">
             <div className="subcontent">
-                <div className="header">{projectState.head}</div>
+                <div className="header">{head}</div>
                 <div className="subheading">Decor / Artchitecture</div>
             </div>
             <Link to = '' className="link">
