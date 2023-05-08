@@ -3,31 +3,13 @@ import feedFirst from "../../../../../assets/images/feedFirst.png";
 import feedSecond from "../../../../../assets/images/feedSecond.png";
 import feedThird from "../../../../../assets/images/feedThird.png";
 import { FeedBackGridItem } from "./components/FeedBackGridItem/FeedBackGridItem";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../../store/store";
 
 export const TestimonialPart = () => {
-  const comments = [
-    {
-      imageSrc: feedFirst,
-      name: "Nattasha Mith",
-      country: "Sydney, USA",
-      feedBack:
-        "This well-designed interior design webpage  showcase a variety of styles and options to inspire and inform visitors.",
-    },
-    {
-      imageSrc: feedSecond,
-      name: "Raymond Galario",
-      country: "Sydney, Australia",
-      feedBack:
-        "Navigation and organization are key factors in making an interior design webpage user-friendly and easy to use.",
-    },
-    {
-      imageSrc: feedThird,
-      name: "Benny Roll",
-      country: "Sydney, New York",
-      feedBack:
-        "High-quality images and well-written descriptions can help visitors visualize and understand the designer's vision for a space.",
-    },
-  ];
+
+  const homePageState = useSelector((state:RootState)=> state.homePage)
+ 
   return (
     <>
       <div className="container">
@@ -35,9 +17,9 @@ export const TestimonialPart = () => {
           <p>What the People Thinks About Us</p>
         </div>
         <div className="feed-back-container">
-          {comments.map((comment) => (
+          {homePageState.feedbacks.map((comment) => (
             <FeedBackGridItem
-              key={`post -${comment.imageSrc}`}
+              key={`post-${comment.imageSrc}`}
               imageSrc={comment.imageSrc}
               name={comment.name}
               country={comment.country}

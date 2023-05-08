@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { feedBackGridItemReducer } from '../app/pages/HomePage/components/TestimonialPart/components/FeedBackGridItem/feedBackGridItem.slice'
+import { homePageReducer } from "../app/pages/HomePage/homePage.slice";
 
 export const store = configureStore ( {
         reducer: {
-         'feedBackGridItem': feedBackGridItemReducer,
+         'homePage': homePageReducer,
         }
  });
  export type RootState = ReturnType<typeof store.getState>;
