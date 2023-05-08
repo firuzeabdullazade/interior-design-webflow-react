@@ -19,16 +19,18 @@
       gap: 8px;
     }
 
-    .head {
+    h2 {
       font-family: $header-font;
       font-size: 85px;
+      font-weight: 400;
       line-height: 125%;
       color: $text-color;
     }
 
-    .subhead {
+    h3 {
       font-family: $common-writing-font;
       font-size: 22px;
+      font-weight: 400;
       line-height: 150%;
       color: $second-text-color;
     }
