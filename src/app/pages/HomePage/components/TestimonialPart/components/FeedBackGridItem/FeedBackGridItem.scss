@@ -1,0 +1,55 @@
+@import "../../../../../../../variables";
+
+.feed-back-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 38px;
+
+  .box {
+    background: #ffffff;
+    border-radius: 30px;
+    width: 370px;
+    height: 339px;
+    padding-top: 53px;
+    padding-left: 37px;
+    padding-right: 37px;
+
+    .personal-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 23px;
+
+      .name-place {
+        display: flex;
+        flex-direction: column;
+        .name {
+          font-family: $header-font;
+          font-size: 25px;
+        }
+        .place {
+          font-family: $common-writing-font;
+          font-weight: 400;
+          font-size: 18px;
+          color: $second-text-color;
+        }
+      }
+    }
+  }
+  .feedback {
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    font-family: $common-writing-font;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: $second-text-color;
+
+  }
+}

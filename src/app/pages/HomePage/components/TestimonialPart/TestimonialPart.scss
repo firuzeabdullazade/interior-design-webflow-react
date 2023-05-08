@@ -1,0 +1,25 @@
+@import "../../../../../variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #f4f0ec;
+  border-radius: 70px;
+  height: 679px;
+  margin-top: 245px;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-family: $header-font;
+      font-size: 50px;
+      line-height: 63px;
+      letter-spacing: 0.02em;
+      margin-top: 88px;
+      width: 547px;
+      text-align: center;
+    }
+  }
+}

@@ -1,10 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { projectReducer } from '../app/pages/HomePage/components/Project/project.slice';
+import { homePageReducer } from "../app/pages/HomePage/homePage.slice";
 
-export const store = configureStore ({
-    reducer: {
-        'project': projectReducer,
-    }
-})
-
-export type RootState = ReturnType<typeof store.getState>;
+export const store = configureStore ( {
+        reducer: {
+         'homePage': homePageReducer,
+        }
+ });
+ export type RootState = ReturnType<typeof store.getState>;

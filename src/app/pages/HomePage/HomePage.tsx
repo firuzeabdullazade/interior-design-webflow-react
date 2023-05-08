@@ -1,5 +1,6 @@
-import "./HomePage.scss";
-import { Banner } from "./components/Banner/Banner";
+import './HomePage.scss';
+import { Banner } from './components/Banner/Banner';
+import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { Project } from "./components/Project/Project";
 
 import firstImage from "../../../assets/images/firstImage.png";
@@ -33,6 +34,7 @@ export const HomePage = () => {
   return (
     <>
       <Banner />
+      <TestimonialPart />
       <section className="project">
         <div className="heading">
           <h2>Follow Our Projects</h2>
