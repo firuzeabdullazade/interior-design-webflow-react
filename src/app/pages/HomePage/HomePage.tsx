@@ -4,7 +4,7 @@ import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { Project } from "./components/Project/Project";
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
-
+import { WorkPart } from "./components/WorkPart/WorkPart"
 
 
 export const HomePage = () => {
@@ -13,6 +13,7 @@ export const HomePage = () => {
   return (
     <>
       <Banner />
+      <WorkPart />
       <TestimonialPart />
       <section className="project">
         <div className="heading">
