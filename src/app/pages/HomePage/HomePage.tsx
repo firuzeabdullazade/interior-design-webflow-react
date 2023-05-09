@@ -4,6 +4,7 @@ import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { Project } from "./components/Project/Project";
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
+import { Counter } from './components/Counter/Counter';
 
 
 
@@ -31,7 +32,7 @@ export const HomePage = () => {
             ))}
         </div>
       </section>
-
+      <Counter/>
     </>
   );
 };
