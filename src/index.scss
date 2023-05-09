@@ -13,4 +13,19 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 75px;
+    border-radius: 18px;
+    font-family: $common-writing-font;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125%;
+    color: white;
+    border: 1px solid $text-color;
+  }
 }
