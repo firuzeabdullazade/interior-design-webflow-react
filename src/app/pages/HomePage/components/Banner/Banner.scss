@@ -36,27 +36,8 @@
     }
 
     button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 26px 48px;
-      gap: 10px;
       width: 219.14px;
       background: $text-color;
-      border-radius: 18px;
-      font-family: $common-writing-font;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 125%;
-      color: white;
-      border: 1px solid $text-color;
-
-      height: 75px;
-      img {
-        width: 15.14px;
-        height: 13.18px;
-      }
     }
   }
   .background {
