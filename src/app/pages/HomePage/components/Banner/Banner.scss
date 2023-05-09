@@ -1,0 +1,75 @@
+@import "../../../../../variables";
+
+.banner {
+  height: 1042px;
+  width: 100%;
+
+  .intro {
+    position: absolute;
+    width: 567px;
+    left: 840px;
+    top: 374px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    h2 {
+      font-family: $header-font;
+      font-size: 85px;
+      font-weight: 400;
+      line-height: 125%;
+      color: $text-color;
+    }
+
+    h3 {
+      font-family: $common-writing-font;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%;
+      color: $second-text-color;
+    }
+
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 26px 48px;
+      gap: 10px;
+      width: 219.14px;
+      background: $text-color;
+      border-radius: 18px;
+      font-family: $common-writing-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 125%;
+      color: white;
+      border: 1px solid $text-color;
+
+      height: 75px;
+      img {
+        width: 15.14px;
+        height: 13.18px;
+      }
+    }
+  }
+  .background {
+    position: absolute;
+    left: 450px;
+    width: 100%;
+    z-index: -1;
+    padding-top: 45px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 1042px;
+    }
+  }
+}
