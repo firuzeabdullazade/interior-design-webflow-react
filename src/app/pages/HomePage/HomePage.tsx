@@ -5,6 +5,7 @@ import { Project } from "./components/Project/Project";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../store/store";
 import { BlogPart } from "./components/BlogPart/BlogPart";
+import { WorkPart } from "./components/WorkPart/WorkPart"
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
@@ -12,6 +13,7 @@ export const HomePage = () => {
   return (
     <>
       <Banner />
+      <WorkPart />
       <TestimonialPart />
       <section className="project">
         <div className="heading">
