@@ -1,13 +1,13 @@
 @import '../../../variables';
 
 footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding-top: 135px;
-    margin-left: 10px;
-    gap: 120px;
+    display: flex; 
+    flex-direction: column; 
+    padding-top: 135px; 
+    gap: 120px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;
 
     .main-interno {
         display: flex;
