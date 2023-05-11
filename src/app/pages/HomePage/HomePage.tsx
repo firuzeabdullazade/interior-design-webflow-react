@@ -4,8 +4,8 @@ import { TestimonialPart } from "./components/TestimonialPart/TestimonialPart";
 import { Project } from "./components/Project/Project";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../store/store";
-import { BlogPart } from "./components/BlogPart/BlogPart";
 import { WorkPart } from "./components/WorkPart/WorkPart"
+import { BlogArticle } from "./components/BlogArticle/BlogArticle";
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
@@ -40,7 +40,7 @@ export const HomePage = () => {
         </div>
         <div className="grid-articles">
           {homePageState.articles.map((article) => (
-            <BlogPart
+            <BlogArticle
               imageSrc={article.imageSrc}
               tag={article.tag}
               date={article.date}

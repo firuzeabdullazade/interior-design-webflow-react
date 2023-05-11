@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import "./BlogPart.scss";
+import "./BlogArticle.scss";
 import vector from "../../../../../assets/icons/vectorImage.svg";
 
-interface BlogPartProps {
+interface BlogArticleProps {
   date: string;
   tag: string;
   imageSrc: string;
   content: string;
 }
 
-export const BlogPart = (props: BlogPartProps) => {
+export const BlogArticle = (props: BlogArticleProps) => {
   const { date, tag, imageSrc, content } = props;
 
   return (
