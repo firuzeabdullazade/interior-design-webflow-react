@@ -5,8 +5,9 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background: rgba(244, 240, 236, 1);
+    background: $background-color;
     padding: 138px 0;
+    margin-top: 168px;
 
     .middle-counter {
         display: flex;
@@ -19,7 +20,7 @@
             width: 37%;
 
             .line {
-                border: 1px solid #CDA274;
+                border: 1px solid $counter-text-color;
             }
 
             .content {
@@ -33,7 +34,7 @@
                     font-weight: 400;
                     font-size: 85px;
                     line-height: 125%;
-                    color: #CDA274;
+                    color: $counter-text-color;
                     margin-block-start: 0;
                     margin-block-end: 10px;
                 }
