@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
 import { WorkPart } from "./components/WorkPart/WorkPart"
 import { AboutUsPart } from './components/AboutUsPart/AboutUsPart';
+import { ClientLogoPart } from './components/ClientLogoPart/ClientLogoPart';
 
 
 export const HomePage = () => {
@@ -17,6 +18,7 @@ export const HomePage = () => {
       <WorkPart />
       <AboutUsPart />
       <TestimonialPart />
+      <ClientLogoPart />
       <section className="project">
         <div className="heading">
           <h2>Follow Our Projects</h2>
