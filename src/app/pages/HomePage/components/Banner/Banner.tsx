@@ -11,11 +11,11 @@ export const Banner = () => {
         </div>
         <div className="intro">
           <div className="content">
-            <div className="head">Let Your Home Be Unique</div>
-            <div className="subhead">
+            <h2>Let Your Home Be Unique</h2>
+            <h3>
               There are many variations of the passages of lorem Ipsum
               fromavailable,variations of the passages.
-            </div>
+            </h3>
           </div>
           <button>
             Get Started
