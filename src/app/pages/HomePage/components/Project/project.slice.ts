@@ -1,21 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 interface ProjectState {
-    imageSrc: string;
-    head: string;
+  imageSrc: string;
+  head: string;
 }
 
 const initialState: ProjectState = {
-    imageSrc: '',
-    head: '',
-}
+  imageSrc: '',
+  head: '',
+};
 
 export const projectSlice = createSlice({
-    initialState : initialState,
-    name: 'project',
-    reducers: {
-
-    }
+  initialState: initialState,
+  name: 'project',
+  reducers: {},
 });
 
 export const projectReducer = projectSlice.reducer;
