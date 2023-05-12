@@ -10,16 +10,14 @@ import { RegisterPage } from "./app/pages/RegisterPage/Registerpage";
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <RegisterPage />
-        {/* <Routes>
-          <Route path="/" element = {<HomePage />}></Route>
-          <Route path="login" element={<LoginPage />}></Route>
-        </Routes>
-          <Route path="register" element = {<RegisterPage />}></Route>
-        </Routes> */}
-      </main>
+      <Header /> 
+      <main> 
+        <Routes> 
+          <Route path="/" element = {<HomePage />}></Route> 
+          <Route path="login" element={<LoginPage />}></Route> 
+          <Route path="register" element = {<RegisterPage />}></Route> 
+        </Routes> 
+      </main> 
       <Footer/>
     </>
   );
