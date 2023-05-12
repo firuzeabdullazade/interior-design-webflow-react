@@ -8,6 +8,7 @@ import { WorkPart } from "./components/WorkPart/WorkPart"
 import { AboutUsPart } from './components/AboutUsPart/AboutUsPart';
 import { BlogArticle } from "./components/BlogArticle/BlogArticle";
 import { Contact } from './components/Contact/Contact';
+import { Counter } from './components/Counter/Counter';
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
@@ -32,6 +33,7 @@ export const HomePage = () => {
           ))}
         </div>
       </section>
+      <Counter/>
       <section className="blog-part">
         <div className="heading">
           <h2>Articles & News</h2>
