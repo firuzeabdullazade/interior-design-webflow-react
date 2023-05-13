@@ -32,7 +32,7 @@ export const LoginPage = () => {
       <div className="no-account">
         If you don't have any account:
         <nav>
-          <Link to="register" className="register">
+          <Link to="/register" className="register">
             Register
           </Link>
         </nav>
