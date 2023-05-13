@@ -6,14 +6,10 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../store/store";
 import { WorkPart } from "./components/WorkPart/WorkPart"
 import { AboutUsPart } from './components/AboutUsPart/AboutUsPart';
-<<<<<<< HEAD
 import { BlogArticle } from "./components/BlogArticle/BlogArticle";
 import { Contact } from './components/Contact/Contact';
 import { Counter } from './components/Counter/Counter';
-=======
 import { ClientLogoPart } from './components/ClientLogoPart/ClientLogoPart';
-
->>>>>>> ClientLogoPartLayout
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
@@ -34,7 +30,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div className="grid-projects">
-          {homePageState.projects.map((project) => (
+          {homePageState.projects.map((project: any) => (  // todo: change any to a data type
             <Project imageSrc={project.imageSrc} head={project.head} />
           ))}
         </div>
@@ -50,7 +46,7 @@ export const HomePage = () => {
           </h3>
         </div>
         <div className="grid-articles">
-          {homePageState.articles.map((article) => (
+          {homePageState.articles.map((article: any) => (  // todo: change any to a data type
             <BlogArticle
               imageSrc={article.imageSrc}
               tag={article.tag}
