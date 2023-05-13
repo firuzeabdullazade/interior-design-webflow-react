@@ -1,13 +1,13 @@
 import './Banner.scss';
 import arrow from '../../../../../assets/icons/Arrow.svg';
-import backgroundimage from '../../../../../assets/images/backgroundImage.png';
+import backgroundImage from '../../../../../assets/images/backgroundImage.png';
 
 export const Banner = () => {
   return (
     <>
       <section className="banner">
         <div className="background">
-          <img src={backgroundimage} alt="background" />
+          <img src={backgroundImage} alt="background" />
         </div>
         <div className="box">
           <div className="intro">

@@ -16,7 +16,7 @@ export const AboutUsPart = () => {
           <div className="button">
             <div className="call">
               <button className="call-button">
-                <img src={call} alt="" />
+                <img src={call} alt="call logo" />
               </button>
               <div className="contact">
                 <h3>012345678</h3>
@@ -25,7 +25,7 @@ export const AboutUsPart = () => {
             </div>
             <button>
               Get Free Estimate
-              <img src={arrow} alt="" />
+              <img src={arrow} alt="arrow logo" />
             </button>
           </div>
         </div>
