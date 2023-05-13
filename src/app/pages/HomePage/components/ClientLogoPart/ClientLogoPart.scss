@@ -1,0 +1,12 @@
+@import '../../../../../variables';
+
+.logo-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 108px;
+    margin-top: 150px;
+}
