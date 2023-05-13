@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "./BlogArticle.scss";
-import vector from "../../../../../assets/icons/vectorImage.svg";
+import './BlogArticle.scss';
+import { Link } from 'react-router-dom';
+import vector from '../../../../../assets/icons/vectorImage.svg';
 
 interface BlogArticleProps {
   date: string;
@@ -16,7 +16,7 @@ export const BlogArticle = (props: BlogArticleProps) => {
     <>
       <div className="grid-article">
         <div className="image-tag">
-          <img src={imageSrc} alt="image" />
+          <img src={imageSrc} alt="" />
           <div className="tag">{tag}</div>
         </div>
         <div className="subcontent">
