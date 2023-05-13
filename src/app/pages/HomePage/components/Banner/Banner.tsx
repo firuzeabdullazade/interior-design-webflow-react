@@ -1,4 +1,5 @@
 import './Banner.scss';
+import arrow from '../../../../../assets/icons/Arrow.svg';
 import backgroundImage from '../../../../../assets/images/backgroundImage.png';
 
 export const Banner = () => {
@@ -17,6 +18,10 @@ export const Banner = () => {
                 passages.
               </h3>
             </div>
+            <button>
+              Get Started
+              <img src={arrow} alt="" />
+            </button>
           </div>
         </div>
       </section>
