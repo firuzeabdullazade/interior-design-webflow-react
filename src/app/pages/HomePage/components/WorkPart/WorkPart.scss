@@ -1,11 +1,15 @@
 @import '../../../../../variables';
 
 .work-part {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 42px;
-    padding-top: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 42px; 
+    margin-top: 245px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;
+
 
     .info {
         display: flex;
