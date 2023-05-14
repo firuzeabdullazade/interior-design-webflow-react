@@ -1,0 +1,57 @@
+@import "../../../../../variables";
+
+.points {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+
+    h2 {
+      font-weight: 400;
+      font-family: $header-font;
+      font-size: 50px;
+      line-height: 62px;
+      color: $text-color;
+    }
+
+    .order {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+      .point {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .order-number {
+          font-family: $header-font;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25px;
+          color: $counter-text-color;
+        }
+
+        .content {
+          font-family: $common-writing-font;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 59px;
+          color: $second-text-color;
+        }
+      }
+    }
+  }
+
+  .line {
+    border: 1px solid #cecece;
+  }
+}

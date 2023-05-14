@@ -1,0 +1,35 @@
+@import "../../../../../variables";
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    font-family: $header-font;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: $text-color;
+    width: 448px;
+  }
+
+  .text {
+    width: 655px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-family: $common-writing-font;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    
+
+    h3 {
+      color: $counter-text-color;
+    }
+  }
+}
