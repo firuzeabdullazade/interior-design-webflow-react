@@ -1,5 +1,5 @@
 import './Contact.scss'
-import arrow from '../../../../../assets/icons/Vector.svg'
+import arrow from '../../../assets/icons/contact arrow.svg'
 export const Contact =()=>{
     return(
         <div className="joininterno">

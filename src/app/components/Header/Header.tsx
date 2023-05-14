@@ -20,8 +20,8 @@ export const Header = () => {
         <div className="nav-icon-part">
           <nav>
             <Link to="" className="nav-link">Home</Link>
-            <Link to="" className="nav-link">Pages</Link>
-            <Link to="" className="nav-link">Services</Link>
+            <Link to="" className="nav-link">About Us</Link>
+            <Link to="/services" className="nav-link">Services</Link>
             <Link to="" className="nav-link">Project</Link>
             <Link to="" className="nav-link">Blog</Link>
             <Link to="" className="nav-link">Contact</Link>

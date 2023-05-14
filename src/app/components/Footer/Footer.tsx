@@ -42,7 +42,7 @@ export const Footer = () => {
                     <Link to="" className='link'>Our Projects</Link>
                     <Link to="" className='link'>Our Team</Link>
                     <Link to="" className='link'>Contact us</Link>
-                    <Link to="" className='link'>Services</Link>
+                    <Link to="services" className='link'>Services</Link>
                     </div>
                 </div>
                 <div className="main-service">

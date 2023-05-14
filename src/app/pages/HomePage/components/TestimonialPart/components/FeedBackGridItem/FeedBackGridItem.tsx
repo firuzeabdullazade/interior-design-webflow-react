@@ -1,6 +1,5 @@
-import { useSelector } from "react-redux";
+
 import "./FeedBackGridItem.scss";
-import { RootState } from "../../../../../../../store/store";
 interface FeedBackGridItemProps {
   imageSrc: string;
   name: string;
