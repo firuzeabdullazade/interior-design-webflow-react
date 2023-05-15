@@ -1,4 +1,4 @@
-import "./WorkPartGridItem.scss";
+import './WorkPartGridItem.scss';
 interface WorkPartGridItemProps {
   imageSrc: string;
   iconSrc: string;
@@ -9,7 +9,7 @@ interface WorkPartGridItemProps {
 }
 export const WorkPartGridItem = (props: WorkPartGridItemProps) => {
   const { imageSrc, iconSrc, number, subhead, title, isLeft } = props;
-  const className = `grid-item${isLeft ? "-left" : ""}`;
+  const className = `grid-item${isLeft ? '-left' : ''}`;
 
   return (
     <div className={className}>
