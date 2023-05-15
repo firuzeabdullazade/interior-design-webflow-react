@@ -1,15 +1,11 @@
-import "./TestimonialPart.scss";
-import feedFirst from "../../../../../assets/images/feedFirst.png";
-import feedSecond from "../../../../../assets/images/feedSecond.png";
-import feedThird from "../../../../../assets/images/feedThird.png";
-import { FeedBackGridItem } from "./components/FeedBackGridItem/FeedBackGridItem";
-import { useSelector } from "react-redux";
-import { RootState } from "../../../../../store/store";
+import './TestimonialPart.scss';
+import { FeedBackGridItem } from './components/FeedBackGridItem/FeedBackGridItem';
+import { RootState } from '../../../../../store/store';
+import { useSelector } from 'react-redux';
 
 export const TestimonialPart = () => {
+  const homePageState = useSelector((state: RootState) => state.homePage);
 
-  const homePageState = useSelector((state:RootState)=> state.homePage)
- 
   return (
     <>
       <div className="container">
