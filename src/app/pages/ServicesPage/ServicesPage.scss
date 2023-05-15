@@ -1,0 +1,45 @@
+@import "../../../variables";
+.info-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  gap: 52px;
+  justify-content: center;
+  align-items: center;
+}
+.working-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $background-color;
+  border-radius: 70px;
+  margin-top: 200px;
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    h1 {
+      font-family: $header-font;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 63px;
+      text-align: center;
+      color: $new-header-color;
+    }
+    p {
+      font-family: $common-writing-font;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 33px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      width: 800px;
+      margin-left: 200px;
+    }
+  }
+}

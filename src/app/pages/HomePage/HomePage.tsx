@@ -3,7 +3,7 @@ import { AboutUsPart } from './components/AboutUsPart/AboutUsPart';
 import { Banner } from './components/Banner/Banner';
 import { BlogArticle } from './components/BlogArticle/BlogArticle';
 import { ClientLogoPart } from './components/ClientLogoPart/ClientLogoPart';
-import { Contact } from './components/Contact/Contact';
+import { Contact } from '../../shared/Contact/Contact';
 import { Counter } from './components/Counter/Counter';
 import { Project } from './components/Project/Project';
 import { RootState } from '../../../store/store';
