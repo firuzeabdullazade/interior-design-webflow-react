@@ -2,10 +2,14 @@ import { createSlice } from '@reduxjs/toolkit';
 import feedFirst from '../../../assets/images/feedFirst.png';
 import feedSecond from '../../../assets/images/feedSecond.png';
 import feedThird from '../../../assets/images/feedThird.png';
+import firstArticle from '../../../assets/images/firstArticle.png';
 import firstImage from '../../../assets/images/firstImage.png';
 import fourthImage from '../../../assets/images/fourthImage.png';
+import secondArticle from '../../../assets/images/secondArticle.png';
 import secondImage from '../../../assets/images/secondImage.png';
+import thirdArticle from '../../../assets/images/thirdArticle.png';
 import thirdImage from '../../../assets/images/thirdImage.png';
+
 interface FeedBackGridItem {
   imageSrc: string;
   name: string;
@@ -17,9 +21,17 @@ interface ProjectGridItem {
   imageSrc: string;
   head: string;
 }
+
+interface BlogPartGridItem {
+  date: string;
+  tag: string;
+  imageSrc: string;
+  content: string;
+}
 interface HomePageState {
   feedbacks: FeedBackGridItem[];
   projects: ProjectGridItem[];
+  articles: BlogPartGridItem[];
 }
 const initialState: HomePageState = {
   feedbacks: [
@@ -65,6 +77,29 @@ const initialState: HomePageState = {
     {
       imageSrc: fourthImage,
       head: 'Minimal Livingroom',
+    },
+  ],
+
+  articles: [
+    {
+      date: '26 December,2022',
+      tag: 'Kitchan Design',
+      imageSrc: firstArticle,
+      content: 'Let’s Get Solution For Building Construction Work',
+    },
+
+    {
+      date: '22 December,2022',
+      tag: 'Living Design',
+      imageSrc: secondArticle,
+      content: `Low Cost Latest Invented Interior Designing Ideas`,
+    },
+
+    {
+      date: '25 December,2022',
+      tag: 'Interior Design',
+      imageSrc: thirdArticle,
+      content: 'Best For Any Office & Business Interior Solution',
     },
   ],
 };
