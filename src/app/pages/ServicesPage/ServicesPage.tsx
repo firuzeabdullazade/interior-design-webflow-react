@@ -11,6 +11,7 @@ export const ServicesPage = () => {
   const servicesPageState = useSelector(
     (state: RootState) => state.servicesPage
   );
+
   return (
     <>
       <div className="hero-back">
@@ -21,19 +22,15 @@ export const ServicesPage = () => {
       </div>
       <div className="info-part">
         {servicesPageState.reviews.map((info) => (
-          <InfoPartGridItem
-            key={`post-${info.head}`}
-            head={info.head}
-            title={info.title}
-          />
+          <InfoPartGridItem key={`post-${info.head}`} head={info.head} title={info.title} />
         ))}
       </div>
       <div className="working-layout">
         <div className="introduction">
           <h1>How We Work</h1>
           <p>
-            Our designers create captivating and functional spaces by blending
-            design elements, colors, textures, and furniture.
+            Our designers create captivating and functional spaces by blending design elements, colors,
+            textures, and furniture.
           </p>
         </div>
         <div className="description">

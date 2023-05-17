@@ -8,11 +8,11 @@ import thirdIcon from "../../../assets/icons/content third icon.svg";
 import contentFourth from "../../../assets/images/content fourth.png";
 import fourthIcon from "../../../assets/icons/content fourth icon.svg";
 
-
 interface InfoPartGridItem {
   head: string;
   title: string;
 }
+
 interface WorkPartGridItem {
   imageSrc: string;
   iconSrc: string;
@@ -21,41 +21,43 @@ interface WorkPartGridItem {
   title: string;
   isLeft: boolean;
 }
+
 interface ServicesPageState {
-    reviews : InfoPartGridItem[];
-    works: WorkPartGridItem[];
+  reviews: InfoPartGridItem[];
+  works: WorkPartGridItem[];
 }
+
 const initialState: ServicesPageState = {
- reviews: [
+  reviews: [
     {
-      head: "Project Plan",
+      head: 'Project Plan',
       title:
         "Efficient execution of our interior design project plan will ensure timely completion while delivering exceptional results that exceed our clients' expectations",
     },
     {
-      head: "Realization",
+      head: 'Realization',
       title:
-        "Realization is the pivotal stage where ideas take shape and come to life through meticulous planning, precise execution, and unwavering attention to detail.",
+        'Realization is the pivotal stage where ideas take shape and come to life through meticulous planning, precise execution, and unwavering attention to detail.',
     },
     {
-      head: "Retail Design",
+      head: 'Retail Design',
       title:
-        "Retail design merges branding, spatial planning, and visual merchandising to enhance the shopping experience and engage customers.",
+        'Retail design merges branding, spatial planning, and visual merchandising to enhance the shopping experience and engage customers.',
     },
     {
-      head: "2d/3d Art Work",
+      head: '2d/3d Art Work',
       title:
-        "2D/3D artwork captivates with its visual brilliance and evokes deep emotions through creative expression.",
+        '2D/3D artwork captivates with its visual brilliance and evokes deep emotions through creative expression.',
     },
     {
-      head: "Interior Work",
+      head: 'Interior Work',
       title:
-        "Interior work bridges the gap between imagination and reality, transforming spaces into captivating and functional designs. You can easily find them in our webpage",
+        'Interior work bridges the gap between imagination and reality, transforming spaces into captivating and functional designs. You can easily find them in our webpage',
     },
     {
-      head: "Decoration Work",
+      head: 'Decoration Work',
       title:
-        "Decoration work transforms spaces with carefully chosen elements, creating personalized and visually captivating environments according your choices",
+        'Decoration work transforms spaces with carefully chosen elements, creating personalized and visually captivating environments according your choices',
     },
   ],
   works: [
@@ -98,7 +100,7 @@ const initialState: ServicesPageState = {
   ],
 };
 export const servicesPageSlice = createSlice({
-  name: "servicesPage",
+  name: 'servicesPage',
   initialState: initialState,
   reducers: {},
 });
