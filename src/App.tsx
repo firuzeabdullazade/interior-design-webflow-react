@@ -6,6 +6,7 @@ import { LoginPage } from './app/pages/LoginPage/LoginPage';
 import { RegisterPage } from './app/pages/RegisterPage/Registerpage';
 import { Route, Routes } from 'react-router-dom';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
+import { ProjectPage } from './app/pages/ProjectPage/ProjectPage';
 import React from 'react';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="login" element={<LoginPage />}></Route>
           <Route path="register" element={<RegisterPage />}></Route>
           <Route path="services" element={<ServicesPage />}></Route>
+          <Route path="project" element={<ProjectPage />}></Route>
         </Routes>
       </main>
       <Footer />
