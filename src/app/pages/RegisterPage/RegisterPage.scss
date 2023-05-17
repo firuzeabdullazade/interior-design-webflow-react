@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  height: 700px;
+  padding: 70px 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,16 @@
         font-size: 22px;
         line-height: 33px;
         color: $second-text-color;
+        width: 100%;
       }
+    }
+
+    p {
+      font-family: $common-writing-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 33px;
+      color: orangered;
     }
     button {
       background: $text-color;
