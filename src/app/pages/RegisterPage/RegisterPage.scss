@@ -1,10 +1,10 @@
-@import "../../../variables";
+@import '../../../variables';
 
 .register-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  height: 671px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,21 +29,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 4px;
 
-    .input-field {
+    label {
       width: 500px;
-      border-left: 0;
-      border-right: 0;
-      border-top: 0;
-      border-bottom: 1px solid $text-color;
-      outline: none;
+      border-bottom: 1px solid #afacac;
       padding: 12px 0;
-      background-color: transparent;
       font-family: $common-writing-font;
       font-weight: 400;
-      font-size: 22px;
+      font-size: 25px;
       line-height: 33px;
       color: $second-text-color;
+
+      input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: $common-writing-font;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: $second-text-color;
+      }
     }
     button {
       background: $text-color;
