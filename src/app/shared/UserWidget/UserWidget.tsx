@@ -1,6 +1,6 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../../../store/store";
-import "./UserWidget.scss";
+import './UserWidget.scss';
+import { RootState } from '../../../store/store';
+import { useSelector } from 'react-redux';
 export const UserWidget = () => {
   const userWidgetState = useSelector((state: RootState) => state.userWidget);
   return (
