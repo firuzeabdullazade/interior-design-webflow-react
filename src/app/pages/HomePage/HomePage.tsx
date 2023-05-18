@@ -2,6 +2,7 @@ import './HomePage.scss';
 import { AboutUsPart } from './components/AboutUsPart/AboutUsPart';
 import { Banner } from './components/Banner/Banner';
 import { BlogArticle } from './components/BlogArticle/BlogArticle';
+import { ClientLogoPart } from '../../shared/ClientLogoPart/ClientLogoPart';
 import { Contact } from '../../shared/Contact/Contact';
 import { Counter } from './components/Counter/Counter';
 import { Project } from './components/Project/Project';
@@ -9,7 +10,6 @@ import { RootState } from '../../../store/store';
 import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { WorkPart } from './components/WorkPart/WorkPart';
 import { useSelector } from 'react-redux';
-import { ClientLogoPart } from '../../shared/ClientLogoPart/ClientLogoPart';
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);

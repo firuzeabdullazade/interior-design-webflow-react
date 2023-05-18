@@ -1,8 +1,8 @@
 import './LoginPage.scss';
+import * as yup from 'yup';
 import { Link } from 'react-router-dom';
 import { loadUser } from '../../shared/UserWidget/userWidget.slice';
 import { useDispatch } from 'react-redux';
-import * as yup from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 

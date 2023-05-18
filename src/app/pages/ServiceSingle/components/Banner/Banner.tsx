@@ -1,5 +1,5 @@
-import "./Banner.scss";
-import background from "../../../../../assets/images/serviceSingleBackground.png";
+import './Banner.scss';
+import background from '../../../../../assets/images/serviceSingleBackground.png';
 
 export const Banner = () => {
   return (

@@ -1,16 +1,13 @@
-import "./ServicesPage.scss";
-import backImage from "../../../assets/images/services back image.jpg";
-import { useSelector } from "react-redux";
-import { RootState } from "../../../store/store";
-import { InfoPartGridItem } from "./components/InfoPartGridItem/InfoPartGridItem";
-import { Contact } from "../../shared/Contact/Contact";
-import { WorkPartGridItem } from "./components/WorkPartGridItem/WorkPartGridItem";
-
+import './ServicesPage.scss';
+import { Contact } from '../../shared/Contact/Contact';
+import { InfoPartGridItem } from './components/InfoPartGridItem/InfoPartGridItem';
+import { RootState } from '../../../store/store';
+import { WorkPartGridItem } from './components/WorkPartGridItem/WorkPartGridItem';
+import { useSelector } from 'react-redux';
+import backImage from '../../../assets/images/services back image.jpg';
 
 export const ServicesPage = () => {
-  const servicesPageState = useSelector(
-    (state: RootState) => state.servicesPage
-  );
+  const servicesPageState = useSelector((state: RootState) => state.servicesPage);
 
   return (
     <>

@@ -1,7 +1,6 @@
-import React from 'react';
 import './BlogDetailsPage.scss';
+import React from 'react';
 import backImage from '../../../assets/images/blog detail background.png';
-
 
 export const BlogDetailsPage = () => {
   return (
@@ -12,8 +11,7 @@ export const BlogDetailsPage = () => {
         </div>
         <img src={backImage} alt="" />
       </div>
-      <div className="blog-container">
-      </div>
+      <div className="blog-container"></div>
     </>
   );
 };

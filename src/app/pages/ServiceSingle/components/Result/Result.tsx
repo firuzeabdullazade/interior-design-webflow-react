@@ -1,6 +1,6 @@
-import "./Result.scss";
-import image from "../../../../../assets/images/Image (2).png";
-import arrow from "../../../../../assets/icons/Arrow.svg";
+import './Result.scss';
+import arrow from '../../../../../assets/icons/Arrow.svg';
+import image from '../../../../../assets/images/Image (2).png';
 
 export const Result = () => {
   return (
@@ -11,8 +11,7 @@ export const Result = () => {
           <div className="text">
             <h2>We love design.That's how we got here.</h2>
             <h3>
-              It is a long established fact that a reader will be distracted by
-              the of readable content .
+              It is a long established fact that a reader will be distracted by the of readable content .
             </h3>
           </div>
           <button>
