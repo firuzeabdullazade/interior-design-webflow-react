@@ -6,8 +6,9 @@ import { LoginPage } from './app/pages/LoginPage/LoginPage';
 import { RegisterPage } from './app/pages/RegisterPage/Registerpage';
 import { Route, Routes } from 'react-router-dom';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
-import React from 'react';
+import { ServiceSingle } from './app/pages/ServiceSingle/ServiceSingle';
 import { BlogDetailsPage } from './app/pages/BlogDetailsPage/BlogDetailsPage';
+import React from 'react';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="register" element={<RegisterPage />}></Route>
           <Route path="services" element={<ServicesPage />}></Route>
           <Route path="blog-details" element={<BlogDetailsPage />}></Route>
+          <Route path="service-single" element = {<ServiceSingle />}></Route>
         </Routes>
       </main>
       <Footer />
