@@ -1,4 +1,4 @@
-@import "../../../../../variables";
+@import '../../../../../variables';
 
 .result {
   display: flex;
@@ -35,9 +35,13 @@
       }
     }
 
-    button {
-      width: 219.14px;
-      background-color: $text-color;
+    .link {
+      text-decoration: none;
+
+      button {
+        width: 219.14px;
+        background-color: $text-color;
+      }
     }
   }
 }
