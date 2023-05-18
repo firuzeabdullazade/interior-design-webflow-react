@@ -32,7 +32,7 @@ const initialState: ServicesPageState = {
     {
       head: 'Project Plan',
       title:
-        "Efficient execution of our interior design project plan will ensure timely completion while delivering exceptional results that exceed our clients' expectations",
+        "Efficient execution of our interior design project plan will ensure timely completion while delivering exceptional results that exceed our clients' expectations.",
     },
     {
       head: 'Realization',
@@ -52,7 +52,7 @@ const initialState: ServicesPageState = {
     {
       head: 'Interior Work',
       title:
-        'Interior work bridges the gap between imagination and reality, transforming spaces into captivating and functional designs. You can easily find them in our webpage',
+        'Interior work bridges the gap between imagination and reality, transforming spaces into captivating and functional designs. You can easily find them in our webpage.',
     },
     {
       head: 'Decoration Work',
