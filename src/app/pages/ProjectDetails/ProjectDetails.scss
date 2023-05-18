@@ -1,0 +1,92 @@
+@import '../../../variables';
+
+.hero-back {
+    position: relative;
+    margin-top: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        display: flex;
+        position: absolute;
+        width: 503px;
+        height: 178px;
+        background: white;
+        border-radius: 37px 37px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 178px;
+
+        h1 {
+            font-family: $header-font;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 63px;
+            letter-spacing: 0em;
+        }
+    }
+}
+
+.project-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+
+    .info-part {
+        display: flex;
+        gap: 42px;
+
+        .box {
+            display: flex;
+            gap: 50px;
+            width: 500px;
+            height: 379px;
+            background: $background-color;
+            border-radius: 70px;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                li {
+                    padding: 10px;
+                    font-family: $header-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.01em;
+                    color: $second-text-color;
+
+                }
+
+                .box-text {
+                    font-family: $common-writing-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.01em;
+                    color: #4D5053;
+
+                    .link {
+                        text-decoration: none;
+                        color: #4D5053;
+
+                    }
+                }
+            }
+        }
+    }
+}
