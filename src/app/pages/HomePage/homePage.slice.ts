@@ -32,7 +32,14 @@ interface HomePageState {
   feedbacks: FeedBackGridItem[];
   projects: ProjectGridItem[];
   articles: BlogPartGridItem[];
+  cards: WorkPartProps[];
 }
+
+interface WorkPartProps {
+  head: string;
+  title: string;
+}
+
 const initialState: HomePageState = {
   feedbacks: [
     {
@@ -100,6 +107,24 @@ const initialState: HomePageState = {
       tag: 'Interior Design',
       imageSrc: thirdArticle,
       content: 'Best For Any Office & Business Interior Solution',
+    },
+  ],
+
+  cards: [
+    {
+      head: 'Project Plan',
+      title:
+        "Efficient execution of our interior design project plan will ensure timely completion while delivering exceptional results that exceed our clients' expectations.",
+    },
+    {
+      head: 'Interior Work',
+      title:
+        'Interior work bridges the gap between imagination and reality, transforming spaces into captivating and functional designs. You can easily find them in our webpage.',
+    },
+    {
+      head: 'Realization',
+      title:
+        'Realization is the pivotal stage where ideas take shape and come to life through meticulous planning, precise execution, and unwavering attention to detail.',
     },
   ],
 };

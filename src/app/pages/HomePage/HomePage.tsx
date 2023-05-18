@@ -8,8 +8,8 @@ import { Counter } from './components/Counter/Counter';
 import { Project } from './components/Project/Project';
 import { RootState } from '../../../store/store';
 import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
-import { WorkPart } from './components/WorkPart/WorkPart';
 import { useSelector } from 'react-redux';
+import { WorkPart } from './components/WorkPart/WorkPart';
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
@@ -17,7 +17,11 @@ export const HomePage = () => {
   return (
     <>
       <Banner />
-      <WorkPart />
+      <div className="work-part">
+        {homePageState.cards.map((info) => (
+          <WorkPart key={`post-${info.head}`} head={info.head} title={info.title} />
+        ))}
+      </div>
       <AboutUsPart />
       <TestimonialPart />
       <ClientLogoPart />
