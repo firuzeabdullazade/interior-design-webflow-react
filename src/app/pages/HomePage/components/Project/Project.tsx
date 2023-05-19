@@ -19,7 +19,7 @@ export const Project = (props: ProjectProps) => {
             <div className="header">{head}</div>
             <div className="subheading">Decor / Artchitecture</div>
           </div>
-          <Link to="" className="link">
+          <Link to="/project" className="link">
             <img src={vector} alt="" />
           </Link>
         </div>

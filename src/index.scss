@@ -67,6 +67,10 @@ body {
     border-radius: 30px;
     width: 398px;
     height: 391px;
+
+    .link {
+      text-decoration: none;
+    }
     &:hover {
       background: $background-color;
     }
