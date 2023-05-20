@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ServiceSingle } from './app/pages/ServiceSingle/ServiceSingle';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
 import React from 'react';
+import { BlogPage } from './app/pages/BlogPage/BlogPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="project" element={<ProjectPage />}></Route>
           <Route path="blog-details" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
+          <Route path="blog-page" element={<BlogPage />}></Route>
         </Routes>
       </main>
       <Footer />
