@@ -35,7 +35,7 @@ export const Footer = () => {
           <div className="main-pages">
             <p>Pages</p>
             <div className="pages">
-              <Link to="" className="link">
+              <Link to="/aboutpage" className="link">
                 About us
               </Link>
               <Link to="" className="link">
