@@ -1,43 +1,23 @@
 import './WorkPart.scss';
 import arrow from '../../../../../assets/icons/Vector.svg';
-export const WorkPart = () => {
+import { Link } from 'react-router-dom';
+interface WorkPartProps {
+  head: string;
+  title: string;
+}
+export const WorkPart = (props: WorkPartProps) => {
+  const { head, title } = props;
+  const className = 'info-card';
   return (
-    <>
-      <div className="work-part">
-        <div className="info-card">
-          <h2>Project Plan</h2>
-          <h3>
-            Efficient execution of our interior design project plan will ensure timely completion while
-            delivering exceptional results that exceed our clients' expectations.
-          </h3>
-          <button>
-            <div className="text">Read More</div>
-            <img src={arrow} alt="" />
-          </button>
-        </div>
-        <div className="info-card">
-          <h2>Interior Work</h2>
-          <h3>
-            Interior work bridges the gap between imagination and reality, transforming spaces into
-            captivating and functional designs. You can easily find them in our webpage.
-          </h3>
-          <button>
-            <div className="text">Read More</div>
-            <img src={arrow} alt="" />
-          </button>
-        </div>
-        <div className="info-card">
-          <h2>Realization</h2>
-          <h3>
-            Realization is the pivotal stage where ideas take shape and come to life through meticulous
-            planning, precise execution, and unwavering attention to detail.
-          </h3>
-          <button>
-            <div className="text">Read More</div>
-            <img src={arrow} alt="" />
-          </button>
-        </div>
-      </div>
-    </>
+    <div className={className}>
+      <h2>{head}</h2>
+      <h3>{title}</h3>
+      <Link to="/service-single" className='link'>
+        <button>
+        <div className="text">Read More</div>
+        <img src={arrow} alt="" />
+      </button>
+      </Link>
+    </div>
   );
 };

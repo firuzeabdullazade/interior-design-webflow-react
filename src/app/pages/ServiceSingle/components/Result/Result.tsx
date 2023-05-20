@@ -1,6 +1,7 @@
 import './Result.scss';
 import arrow from '../../../../../assets/icons/Arrow.svg';
 import image from '../../../../../assets/images/Image (2).png';
+import { Link } from 'react-router-dom';
 
 export const Result = () => {
   return (
@@ -14,10 +15,12 @@ export const Result = () => {
               It is a long established fact that a reader will be distracted by the of readable content .
             </h3>
           </div>
-          <button>
-            Our Projects
-            <img src={arrow} alt="" />
-          </button>
+          <Link to="/project" className="link">
+            <button>
+              Our Projects
+              <img src={arrow} alt="" />
+            </button>
+          </Link>
         </div>
       </div>
     </>
