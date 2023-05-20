@@ -25,7 +25,7 @@ function App() {
           <Route path="project" element={<ProjectPage />}></Route>
           <Route path="blog-details" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
-          <Route path="project-details" element = {<ProjectDetails />}></Route> 
+          <Route path="project-details" element={<ProjectDetails />}></Route>
         </Routes>
       </main>
       <Footer />

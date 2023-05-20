@@ -23,9 +23,9 @@ export const Header = () => {
               Home
             </Link>
             <Link to="" className="nav-link">
-              Pages
+              About Us
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/services" className="nav-link">
               Services
             </Link>
             <Link to="/project" className="nav-link">
