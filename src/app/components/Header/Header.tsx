@@ -31,7 +31,7 @@ export const Header = () => {
             <Link to="/project" className="nav-link">
               Project
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/blog-page" className="nav-link">
               Blog
             </Link>
             <Link to="/contact-page" className="nav-link">

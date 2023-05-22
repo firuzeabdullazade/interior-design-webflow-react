@@ -21,7 +21,7 @@ export const Counter = () => {
         <div className="line"></div>
         <div className="text">
           <h1>95</h1>
-          <h3>Happy CUstomers</h3>
+          <h3>Happy Customers</h3>
         </div>
       </div>
     </>
