@@ -14,8 +14,7 @@ export const Banner = () => {
             <div className="content">
               <h2>Let Your Home Be Unique</h2>
               <h3>
-                There are many variations of the passages of lorem Ipsum fromavailable,variations of the
-                passages.
+                Embrace individuality and make your home a reflection of your unique style and personality.
               </h3>
             </div>
             <button>
