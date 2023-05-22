@@ -1,0 +1,28 @@
+@import "../../../../../variables";
+
+.banner-service {
+  margin-top: 45px;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    
+    .intro {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 503px;
+      height: 178px;
+      top: 317px;
+      background-color: $second-background-color;
+      border-radius: 37px 37px 0px 0px;
+      border: 1px solid $second-background-color;
+      font-family: $header-font;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 62px;
+      color: $text-color;
+    }
+  }
+}

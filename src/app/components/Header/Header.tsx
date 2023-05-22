@@ -28,10 +28,10 @@ export const Header = () => {
             <Link to="" className="nav-link">
               Services
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/project" className="nav-link">
               Project
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/blog-page" className="nav-link">
               Blog
             </Link>
             <Link to="" className="nav-link">
