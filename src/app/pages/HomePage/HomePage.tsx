@@ -4,12 +4,12 @@ import { Banner } from './components/Banner/Banner';
 import { BlogArticle } from './components/BlogArticle/BlogArticle';
 import { ClientLogoPart } from './components/ClientLogoPart/ClientLogoPart';
 import { Contact } from './components/Contact/Contact';
-import { Counter } from './components/Counter/Counter';
 import { Project } from './components/Project/Project';
 import { RootState } from '../../../store/store';
 import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
 import { WorkPart } from './components/WorkPart/WorkPart';
 import { useSelector } from 'react-redux';
+import { Counter } from './components/Counter/Counter';
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);

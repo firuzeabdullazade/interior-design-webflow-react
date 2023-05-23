@@ -223,64 +223,130 @@
     }
 }
 
-// .team {
-//     width: 100%;
-//     height: 970px;
-//     margin-top: 200px;
-//     background-color: $background-color;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+.team {
+    width: 100%;
+    height: 996px;
+    margin-top: 200px;
+    background-color: $background-color ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//     .team-content {
 
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         gap: 40px;
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
 
-//         .title {
-//             font-family: $header-font;
-//             font-style: normal;
-//             font-weight: 400;
-//             font-size: 50px;
-//             line-height: 125%;
-//             text-align: center;
-//             letter-spacing: 0.02em;
-//             width: 547px;
-//             color: $text-color ;
-//         }
 
-//         .cards {
-//             display: flex;
+        .title {
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 125%;
+            letter-spacing: 0.02em;
+            color: $text-color;
+            width: 547px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-//             .flipcards {
-//                 display: flex;
-//                 gap: 22px;
-//                 position: relative;
-//                 width: 100%;
-//                 height: 100%;
-//                 transition: transform 0.9s;
-//                 transform-style: preserve-3d;
 
-//                 .front {
-//                     backface-visibility: hidden;
-//                 }
+        .grid-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 22px;
+        }
 
-//                 .back {
-//                     display: flex;
-//                     flex-direction: column;
-//                     justify-content: center;
-//                     align-items: center;
-//                     backface-visibility: hidden;
-//                     transform: rotateY(180deg);
-//                 }
-//             }
-//         }
-//     }
-// }
+        .flip-card {
+            width: 283.55px;
+            height: 433px;
+            perspective: 1000px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
 
-// .cards:hover .flipcards {
-//     transform: rotateY(180deg);
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
 
-// }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+
+        .flip-card-back {
+            background-color: #eaeaea;
+            color: #000;
+            transform: rotateY(180deg);
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 70px;
+
+                h3 {
+                    font-family: $header-font;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.01em;
+                }
+
+                p {
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.01em;
+                    color: $second-text-color;
+                }
+
+                .icons {
+                    display: flex;
+                    margin-top: 65px;
+                    gap: 36px;
+                    align-items: center;
+                }
+
+                .contact-part {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 65px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
