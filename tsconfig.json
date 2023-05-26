@@ -22,5 +22,6 @@
   },
   "include": [
     "src"
-, "src/app/components/Footer/Footer.tsx"  ]
+, "src/app/components/Footer/Footer.tsx",
+"./.eslintrc.json"  ]
 }

@@ -52,7 +52,7 @@ export const HomePage = () => {
             page when lookings at its layouts the points of using.
           </h3>
         </div>
-        <div className="grid-articles">
+        <div className="grid-articles-homepage">
           {homePageState.articles.map(
             (
               article: any, // todo: change any to a data type
