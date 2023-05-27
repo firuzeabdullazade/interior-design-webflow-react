@@ -33,12 +33,10 @@
   }
 
   .grid-articles-homepage {
-    display: flex;
-    gap: 27px;
-
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px; 
      
-
     .grid-article {
       display: flex;
       flex-direction: column;
