@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom';
 import vector from '../../../../../assets/icons/vectorImage.svg';
 
 interface BlogArticleProps {
+  postId: number;
   date: string;
   tag: string;
   imageSrc: string;
+  firstPostImage: string;
+  secondPostImage: string;
   content: string;
+  postContent: string;
 }
 
 export const BlogArticle = (props: BlogArticleProps) => {
-  const { date, tag, imageSrc, content } = props;
+  const { postId, date, tag, imageSrc, firstPostImage, secondPostImage, content, postContent } = props;
 
   return (
     <>
@@ -23,7 +27,19 @@ export const BlogArticle = (props: BlogArticleProps) => {
           <h3>{content}</h3>
           <div className="date-button">
             <div className="date">{date}</div>
-            <Link to="" className="link">
+            <Link 
+            to={`/blog/${postId}`} 
+            state={{
+                postId,
+                date,
+                tag,
+                imageSrc,
+                firstPostImage,
+                secondPostImage,
+                content,
+                postContent,
+            }} 
+            className="link">
               <img src={vector} alt="" />
             </Link>
           </div>
