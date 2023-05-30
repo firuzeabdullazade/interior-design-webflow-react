@@ -32,13 +32,11 @@
     }
   }
 
-  .grid-articles {
-    display: flex;
-    gap: 27px;
-
-    
+  .grid-articles-homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px; 
      
-
     .grid-article {
       display: flex;
       flex-direction: column;
