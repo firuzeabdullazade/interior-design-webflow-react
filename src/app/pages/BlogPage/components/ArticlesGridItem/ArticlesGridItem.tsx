@@ -27,9 +27,9 @@ export const ArticlesGridItem = (props: ArticlesGridItemProps) => {
           <h3>{content}</h3>
           <div className="date-button">
             <div className="date">{date}</div>
-            <Link 
-            to={`/blog/${postId}`} 
-            state={{
+            <Link
+              to={`/blog/${postId}`}
+              state={{
                 postId,
                 date,
                 tag,
@@ -38,8 +38,9 @@ export const ArticlesGridItem = (props: ArticlesGridItemProps) => {
                 secondPostImage,
                 content,
                 postContent,
-            }} 
-            className="link">
+              }}
+              className="link"
+            >
               <img src={vector} alt="" />
             </Link>
           </div>
