@@ -38,7 +38,13 @@ export const HomePage = () => {
             (
               project: any, // todo: change any to a data type
             ) => (
-              <Project imageSrc={project.imageSrc} head={project.head} />
+              <Project 
+              projectId={project.projectId}
+              imageSrc={project.imageSrc} 
+              head={project.head} 
+              content={project.content}
+              projectImage={project.projectImage}
+              />
             ),
           )}
         </div>

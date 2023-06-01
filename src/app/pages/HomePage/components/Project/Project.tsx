@@ -3,27 +3,42 @@ import { Link } from 'react-router-dom';
 import vector from '../../../../../assets/icons/vectorImage.svg';
 
 interface ProjectProps {
+  projectId: number;
   imageSrc: string;
   head: string;
+  content: string;
+  projectImage: string;
 }
 
 export const Project = (props: ProjectProps) => {
-  const { imageSrc, head } = props;
+  const { projectId, imageSrc, head, content, projectImage } = props;
 
   return (
     <>
-      <div className="grid-project">
-        <img src={imageSrc} alt="" />
-        <div className="content">
-          <div className="subcontent">
-            <div className="header">{head}</div>
-            <div className="subheading">Decor / Artchitecture</div>
+      <Link
+        to={`/project/${projectId}`}
+        state={{
+          projectId,
+          imageSrc,
+          head,
+          content,
+          projectImage,
+        }}
+        className="link"
+      >
+        <div className="grid-project">
+          <img src={imageSrc} alt="" />
+          <div className="content">
+            <div className="subcontent">
+              <div className="header">{head}</div>
+              <div className="subheading">Decor / Artchitecture</div>
+            </div>
+            <div className="arrow">
+              <img src={vector} alt="" />
+            </div>
           </div>
-          <Link to="/project" className="link">
-            <img src={vector} alt="" />
-          </Link>
         </div>
-      </div>
+      </Link>
     </>
   );
 };
