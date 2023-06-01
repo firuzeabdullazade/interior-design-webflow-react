@@ -1,0 +1,49 @@
+@import '../../../variables';
+.joininterno {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $text-color;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 73px;
+    margin-top: 200px;
+    .sub-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+
+        .title {
+            color:#FFFFFF;
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 125%;
+            margin-block-start: 20px;
+            margin-block-end: 0;
+        }
+
+        .text {
+            font-family: $common-writing-font;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        }
+    }
+
+    button {
+        width: 23%;
+        background: #CDA274;
+        box-shadow: 0px 10px 20px #1F2022;
+        padding: 29px 26px;
+        letter-spacing: 0.02em;
+        border-style: none;
+        border-radius: 18px;
+    }
+}

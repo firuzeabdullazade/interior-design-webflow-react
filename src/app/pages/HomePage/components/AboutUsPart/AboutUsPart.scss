@@ -1,0 +1,74 @@
+@import '../../../../../variables';
+
+.about-us {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin-top: 200px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        h2 {
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 62px;
+            color: $text-color;
+        }
+
+        p {
+            font-family: $common-writing-font;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            color: $second-text-color;
+
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            gap: 47px;
+
+            .call {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 15px;
+
+                h3 {
+                    font-family: $common-writing-font;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: $second-text-color;
+                }
+
+                .call-button {
+                    width: 93px;
+                    height: 93px;
+                    border-radius: 50%;
+                    background-color: rgba(244, 240, 236, 1);
+                    border: 2px solid rgba(244, 240, 236, 1);
+                }
+
+            }
+
+            button {
+                width: 238.14px;
+                height: 75px;
+                background-color: $button-color;
+                border: 1px solid $button-color;
+            }
+        }
+    }
+}

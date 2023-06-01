@@ -1,31 +1,44 @@
-import { Link } from "react-router-dom";
-import "./Project.scss";
+import './Project.scss';
+import { Link } from 'react-router-dom';
 import vector from '../../../../../assets/icons/vectorImage.svg';
-import { RootState } from "../../../../../store/store";
-import { useSelector } from "react-redux";
 
 interface ProjectProps {
-    imageSrc: string;
-    head: string;
+  projectId: number;
+  imageSrc: string;
+  head: string;
+  content: string;
+  projectImage: string;
 }
 
 export const Project = (props: ProjectProps) => {
-    const { imageSrc, head } = props;
+  const { projectId, imageSrc, head, content, projectImage } = props;
 
   return (
     <>
-      <div className="grid-project">
-        <img src= {imageSrc} alt="image" />
-        <div className="content">
+      <Link
+        to={`/project/${projectId}`}
+        state={{
+          projectId,
+          imageSrc,
+          head,
+          content,
+          projectImage,
+        }}
+        className="link"
+      >
+        <div className="grid-project">
+          <img src={imageSrc} alt="" />
+          <div className="content">
             <div className="subcontent">
-                <div className="header">{head}</div>
-                <div className="subheading">Decor / Artchitecture</div>
+              <div className="header">{head}</div>
+              <div className="subheading">Decor / Artchitecture</div>
             </div>
-            <Link to = '' className="link">
-            <img src= {vector} alt="" />
-            </Link>
+            <div className="arrow">
+              <img src={vector} alt="" />
+            </div>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

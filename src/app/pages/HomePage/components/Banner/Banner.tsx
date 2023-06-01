@@ -1,26 +1,27 @@
-import "./Banner.scss";
-import backgroundimage from "../../../../../assets/images/backgroundImage.png";
-import arrow from "../../../../../assets/icons/Arrow.svg";
+import './Banner.scss';
+import arrow from '../../../../../assets/icons/Arrow.svg';
+import backgroundImage from '../../../../../assets/images/backgroundImage.png';
 
 export const Banner = () => {
   return (
     <>
       <section className="banner">
         <div className="background">
-          <img src={backgroundimage} alt="background image" />
+          <img src={backgroundImage} alt="background" />
         </div>
-        <div className="intro">
-          <div className="content">
-            <h2>Let Your Home Be Unique</h2>
-            <h3>
-              There are many variations of the passages of lorem Ipsum
-              fromavailable,variations of the passages.
-            </h3>
+        <div className="box">
+          <div className="intro">
+            <div className="content">
+              <h2>Let Your Home Be Unique</h2>
+              <h3>
+                Embrace individuality and make your home a reflection of your unique style and personality.
+              </h3>
+            </div>
+            <button>
+              Get Started
+              <img src={arrow} alt="" />
+            </button>
           </div>
-          <button>
-            Get Started
-            <img src={arrow} alt="arrow logo" />
-          </button>
         </div>
       </section>
     </>
