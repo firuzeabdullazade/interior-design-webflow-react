@@ -37,13 +37,20 @@
         }
     }
 
-    button {
-        width: 23%;
-        background: #CDA274;
-        box-shadow: 0px 10px 20px #1F2022;
-        padding: 29px 26px;
-        letter-spacing: 0.02em;
-        border-style: none;
-        border-radius: 18px;
+    .link{
+        text-decoration: none;
+        button {
+            width: 237px;
+            height: 75px;
+            background: #CDA274;
+            box-shadow: 0px 10px 20px #1F2022;
+            padding: 29px 26px;
+            letter-spacing: 0.02em;
+            border-style: none;
+            border-radius: 18px;
+        }
+
     }
+
+    
 }

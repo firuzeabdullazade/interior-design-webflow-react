@@ -70,78 +70,58 @@
         .form-button {
             display: flex;
             flex-direction: column;
-
             gap: 58px;
-            width: 797px;
 
             form {
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
-
-                .row {
-                    display: flex;
-                    gap: 39px;
-
-                    label {
-                        width: 100%;
-                        border-bottom: 1px solid #afacac;
-                        font-family: $common-writing-font;
-                        font-weight: 400;
-                        font-size: 22px;
-                        line-height: 33px;
-                        color: $second-text-color;
-
-                        input {
-                            background-color: transparent;
-                            outline: none;
-                            border: none;
-                            font-family: $common-writing-font;
-                            font-weight: 400;
-                            font-size: 22px;
-                            line-height: 33px;
-                            color: $second-text-color;
-                            width: 100%;
-                        }
-                    }
-
-                }
-
-                .comment {
-                    padding-bottom: 130px;
-                    width: 100%;
-                    border-bottom: 1px solid #afacac;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 797px;
+            
+                label {
+                  width: 797px;
+                  border-bottom: 1px solid #afacac;
+                  padding: 12px 0;
+                  font-family: $common-writing-font;
+                  font-weight: 400;
+                  font-size: 25px;
+                  line-height: 33px;
+                  color: $second-text-color;
+            
+                  input {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
                     font-family: $common-writing-font;
                     font-weight: 400;
                     font-size: 22px;
                     line-height: 33px;
                     color: $second-text-color;
-
-                    input {
-                        background-color: transparent;
-                        outline: none;
-                        border: none;
-                        font-family: $common-writing-font;
-                        font-weight: 400;
-                        font-size: 22px;
-                        line-height: 33px;
-                        color: $second-text-color;
-                        width: 100%;
-                    }
-
+                    width: 100%;
+                  }
                 }
-
-            }
-
-            .button {
-                display: flex;
-                justify-content: flex-end;
-
+                .comment{
+                    padding-bottom: 130px;
+                    width: 100%;
+                    padding-top: 50px;
+                }
+                p {
+                  font-family: $common-writing-font;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 33px;
+                  color: orangered;
+                }
                 button {
-                    width: 220px;
-                    background-color: $text-color;
+                  background: $text-color;
+                  width: 250px;
+                  margin-top: 41px;
+                  font-size: 20px;
+                  
                 }
-            }
+              }
         }
 
     }

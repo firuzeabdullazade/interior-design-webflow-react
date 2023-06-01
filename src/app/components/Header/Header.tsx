@@ -34,7 +34,7 @@ export const Header = () => {
             <Link to="/blog-page" className="nav-link">
               Blog
             </Link>
-            <Link to="/contact-page" className="nav-link">
+            <Link to="/contact" className="nav-link">
               Contact
             </Link>
             {!userWidgetState.name && (
