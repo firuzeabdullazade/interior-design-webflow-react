@@ -1,0 +1,61 @@
+@import '../../../../../variables';
+.description {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 100px;
+    margin-top: 100px;
+    padding-bottom: 160px;
+    max-width: 967px;
+    margin-left: auto;
+    margin-right: auto;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 63px;
+      .icon-number {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        .number {
+          font-family: $header-font;
+          font-size: 120px;
+          font-weight: 400;
+          line-height: 150px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: $default-background;
+        }
+      }
+      .sub-content {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        h3 {
+          font-family: $header-font;
+          font-size: 35px;
+          font-weight: 400;
+          line-height: 44px;
+          color: $text-color;
+        }
+        p {
+          font-family: $common-writing-font;
+          font-size: 22px;
+          font-weight: 400;
+          letter-spacing: 0.01em;
+          text-align: left;
+          line-height: 150%;
+        }
+      }
+    }
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      gap: 59px;
+    }
+    .grid-item-left {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 59px;
+    }
+  }
