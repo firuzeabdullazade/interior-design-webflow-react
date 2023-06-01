@@ -5,7 +5,6 @@ import { UserWidget } from '../../shared/UserWidget/UserWidget';
 import { logOut } from '../../shared/UserWidget/userWidget.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import pageLogo from '../../../assets/icons/pageLogo.svg';
-import searchIcon from '../../../assets/icons/search icon.svg';
 export const Header = () => {
   const userWidgetState = useSelector((state: RootState) => state.userWidget);
   const dispatch = useDispatch();
@@ -28,10 +27,7 @@ export const Header = () => {
             <Link to="/services" className="nav-link">
               Services
             </Link>
-            <Link to="/project" className="nav-link">
-              Project
-            </Link>
-            <Link to="/blog-page" className="nav-link">
+            <Link to="/blog" className="nav-link">
               Blog
             </Link>
             <Link to="" className="nav-link">
@@ -46,12 +42,11 @@ export const Header = () => {
             )}
             {userWidgetState.name && (
               <>
-                <button onClick={onLogOutClick}>Log out</button>
                 <UserWidget />
+                <button onClick={onLogOutClick}>Log out</button>
               </>
             )}
           </nav>
-          <img src={searchIcon} alt="" />
         </div>
       </div>
     </header>

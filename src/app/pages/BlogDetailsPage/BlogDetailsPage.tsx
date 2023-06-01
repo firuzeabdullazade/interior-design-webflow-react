@@ -1,15 +1,43 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import './BlogDetailsPage.scss';
+import * as yup from 'yup';
 import { DesignSprints } from './components/DesignSprints/DesignSprints';
-import { RootState } from '../../../store/store';
-import { useSelector } from 'react-redux';
-import React from 'react';
-import backImage from '../../../assets/images/blog detail background.png';
-import image from '../../../assets/images/details image.png';
-import searchIcon from '../../../assets/icons/new search icon (2).svg';
 import { NewsGridItem } from './components/NewsGridItem/NewsGridItem';
+import { RootState } from '../../../store/store';
+import { TagsGrid } from './components/TagsGrid/TagsGrid';
+import { useForm } from 'react-hook-form';
+import { useSelector } from 'react-redux';
+import { yupResolver } from '@hookform/resolvers/yup';
+import React from 'react';
+import arrow from '../../../assets/icons/Arrow.svg';
+import backImage from '../../../assets/images/blog detail background.png';
+import searchIcon from '../../../assets/icons/new search icon (2).svg';
+import { useParams } from 'react-router-dom';
+
+const schema = yup
+  .object({
+    subject: yup.string().required(),
+    reply: yup.string().required(),
+  })
+  .required();
+type FormData = yup.InferType<typeof schema>;
 
 export const BlogDetailsPage = () => {
   const blogDetailsPageState = useSelector((state: RootState) => state.blogDetailsPage);
+  const post: any = blogDetailsPageState.postState;
+
+  const params = useParams();
+  const {
+    register,
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+
+  // api call will be here a bit later =)
+  const onSubmit = (data: FormData) => console.log(data);
   return (
     <>
       <div className="hero-back">
@@ -23,27 +51,12 @@ export const BlogDetailsPage = () => {
           <h3>
             Let’s Get Solution for Building <br /> Construction Work
           </h3>
-          <img src={image} alt="" />
+          <img className="images" src={post.firstPostImage} alt="" />
           <div className="date-elements">
-            <p>26 December,2022 </p>
+            <p>{post.date}</p>
             <p>Interior / Design / Home / Decore</p>
           </div>
-          <div className="text">
-            <p>
-              Building construction is a complex and multi-faceted process that requires meticulous planning,
-              coordination, and execution. From residential homes to towering skyscrapers, the successful
-              completion of a construction project hinges on employing efficient solutions that resource
-              utilization, enhance productivity, and maintain high-quality standards. In industry, where time
-              and budget constraints are paramount, it is imperative embrace innovative approaches that not
-              only streamline construction processes but also prioritize sustainability and skilled labor
-              utilization.
-            </p>
-            <p>
-              This article presents a comprehensive solution for building construction, encompassing key
-              aspects such as project management, technology integration, sustainable practices, and the
-              optimal allocation of skilled labor.
-            </p>
-          </div>
+          <div className="text" dangerouslySetInnerHTML={{ __html: post.postContent }} />
           <h3>Design sprints are great</h3>
           <div className="sprints-info-part">
             <p>
@@ -60,7 +73,33 @@ export const BlogDetailsPage = () => {
               streamlining the workflow, improving communication with clients, and ensuring a user-centered
               design process.
             </p>
-            <img src={image} alt="" />
+            <img className="last-images" src={post.secondPostImage} alt="" />
+          </div>
+
+          <div className="reply-part">
+            <h2>Leaving a Reply</h2>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <label>
+                Name: <input type="text" />
+              </label>
+              <label>
+                Subject <input type="text" {...register('subject')} />
+              </label>
+              <p className="validation-error">{errors.subject?.message}</p>
+              <label className="reply">
+                Hello I am intrested in..
+                <input type="text" {...register('reply')}/>
+                <p className="validation-error">{errors.reply?.message}</p>
+              </label>
+              <label className="input-group">
+                <input type="checkbox" className="checkbox" />
+                <span>Save my name, email, and website in this browser for the next time I comment.</span>
+              </label>
+              <button type="submit" className="submit">
+                Send Now
+                <img src={arrow} alt="" />
+              </button>
+            </form>
           </div>
         </div>
         <div className="searching-part">
@@ -74,7 +113,24 @@ export const BlogDetailsPage = () => {
             <p className="subhead">Latest News</p>
             <div className="news-grid">
               {blogDetailsPageState.news.map((article) => (
-                <NewsGridItem key={`news-${article.date}`} newsHead={article.newsHead} date={article.date} />
+                <NewsGridItem
+                  key={`news-${article.newsId}`}
+                  newsHead={article.newsHead}
+                  date={article.date}
+                  newsId={article.newsId}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="tags-part">
+            <p>Tags</p>
+            <div className="tags-grid">
+              {blogDetailsPageState.tags.map((tag) => (
+                <TagsGrid
+                  key={`news-${tag.buttonId}`}
+                  buttonId={tag.buttonId}
+                  buttonTitle={tag.buttonTitle}
+                />
               ))}
             </div>
           </div>

@@ -4,12 +4,19 @@ interface DesignSprints {
   title: string;
 }
 interface NewsGridItem {
+  newsId: number;
   newsHead: string;
   date: string;
+}
+interface TagsGrid {
+  buttonId: number;
+  buttonTitle: string;
 }
 interface BlogDetailsPageState {
   titles: DesignSprints[];
   news: NewsGridItem[];
+  tags: TagsGrid[];
+  postState: object;
 }
 
 const initialState: BlogDetailsPageState = {
@@ -17,7 +24,7 @@ const initialState: BlogDetailsPageState = {
     {
       order: 1,
       title:
-        ' Problem Framing and Research: Begin by understanding the client`s needs, conductingresearch, and gathering data to identify key challenges or opportunities in the interiordesign project.',
+        ' Problem Framing and Research: Begin by understanding the client`s needs, conducting research, and gathering data to identify key challenges or opportunities in the interiordesign project.',
     },
     {
       order: 2,
@@ -42,22 +49,55 @@ const initialState: BlogDetailsPageState = {
   ],
   news: [
     {
+      newsId: 1,
       newsHead: 'We Focus Icredible Designs For Kitchen',
       date: '26/12/2022',
     },
     {
+      newsId: 2,
       newsHead: 'We Focus On Gorgeous Interior Designs',
       date: '25/12/2022',
     },
     {
+      newsId: 3,
       newsHead: 'We Focus On Comfortable Living Rooms',
       date: '22/12/2022',
     },
   ],
+  tags: [
+    {
+      buttonId: 1,
+      buttonTitle: 'Kitchen',
+    },
+
+    {
+      buttonId: 2,
+      buttonTitle: 'Living Room',
+    },
+    {
+      buttonId: 3,
+      buttonTitle: 'Interior Design',
+    },
+    {
+      buttonId: 4,
+      buttonTitle: 'Bedroom',
+    },
+    {
+      buttonId: 5,
+      buttonTitle: 'Architecture',
+    },
+  ],
+  postState: {},
 };
 export const blogDetailsPageSlice = createSlice({
   name: 'blogDetailsPage',
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    stateLoad: (state, action) => {
+      state.postState = action.payload;
+    },
+  },
 });
+
+export const { stateLoad } = blogDetailsPageSlice.actions;
 export const blogDetailsPageReducer = blogDetailsPageSlice.reducer;
