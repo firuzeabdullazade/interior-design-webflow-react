@@ -1,18 +1,33 @@
-import { useSelector } from 'react-redux';
+import './BlogPage.scss';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import './BlogPage.scss';
-import { RootState } from '../../../store/store';
 import { ArticlesGridItem } from './components/ArticlesGridItem/ArticlesGridItem';
 import { Banner } from './components/Banner/Banner';
 import { LatestPost } from './components/LatestPost/LatestPost';
+import { RootState } from '../../../store/store';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { baseUrl } from '../../shared/consts';
+import { getArticles } from './blogPage.slice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
 export const BlogPage = () => {
   const blogPageState = useSelector((state: RootState) => state.blogPage);
+
+  console.log(blogPageState);
+
+  
   SwiperCore.use([Navigation, Pagination]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    fetch(`${baseUrl}/articles`)
+      .then((response) => response.json())
+      .then((articles) => {
+        dispatch(getArticles(articles));
+      });
+  }, []);
 
   return (
     <>
@@ -60,6 +75,7 @@ export const BlogPage = () => {
                     firstPostImage={article.firstPostImage}
                     secondPostImage={article.secondPostImage}
                     postContent={article.postContent}
+                    shortTag={article.shortTag}
                   />
                 </SwiperSlide>
               ))}

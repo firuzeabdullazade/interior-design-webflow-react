@@ -54,7 +54,9 @@ export const LoginPage = () => {
           Password: <input type="password" {...register('password')} />
         </label>
         <p className="validation-error">{errors.password?.message}</p>
-        <button type="submit">Log In</button>
+        <button type="submit" onClick={onLogInButtonClick}>
+          Log In
+        </button>
       </form>
       <div className="no-account">
         If you don't have any account:
