@@ -1,0 +1,352 @@
+@import "../../../variables";
+
+.about-intro {
+    margin-top: 45px;
+
+    img {
+        width: 100%;
+    }
+
+    .about-text {
+        display: flex;
+        justify-content: center;
+
+        p {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 503px;
+            height: 197px;
+            top: 317px;
+            background-color: $second-background-color;
+            border-radius: 37px 37px 0px 0px;
+            border: 1px solid $second-background-color;
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 62px;
+            color: $text-color;
+        }
+    }
+}
+
+.mailbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 216px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 77px;
+        align-items: center;
+
+        p {
+            font-family: $header-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 125%;
+            color: $text-color;
+            letter-spacing: 0.02em;
+            align-items: center;
+            width: 645px;
+            text-align: center;
+        }
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 56px;
+
+            .name-email {
+                display: flex;
+                gap: 46px;
+
+                input {
+                    width: 378px;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                    border-bottom: 1px solid $text-color;
+                    outline: none;
+                    padding: 12px 0;
+                    background-color: transparent;
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: $second-text-color;
+                }
+            }
+
+            .subject {
+                textarea {
+                    width: 795px;
+                    height: 170px;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                    border-bottom: 1px solid $text-color;
+                    outline: none;
+                    padding: 12px 0;
+                    background-color: transparent;
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: $second-text-color;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+
+        button {
+            width: 221px;
+            background: $text-color;
+            box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+        }
+    }
+}
+
+.quotes {
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+
+    img {
+        position: absolute;
+
+    }
+
+    .quotes-content {
+        width: 751px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: $text-color;
+            line-height: 125%;
+
+        }
+
+        .mark {
+            font-family: $header-font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 85px;
+            letter-spacing: 0.02em;
+            height: 62px;
+        }
+
+        .texts {
+            font-family: $header-font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 35px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $text-color;
+            width: 725px;
+        }
+
+        .name {
+            font-family: $common-writing-font;
+            font-size: 25px;
+            letter-spacing: 0.01em;
+        }
+    }
+}
+
+.wwd-ter {
+    margin-top: 221px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 109px;
+
+    .wwd {
+        display: flex;
+        gap: 61px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+
+            p {
+                font-family: $header-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 125%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: $text-color;
+            }
+
+            .text {
+                font-family: $common-writing-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: $second-text-color;
+            }
+
+            button {
+                width: 220px;
+                background-color: $text-color;
+            }
+        }
+    }
+}
+
+.team {
+    width: 100%;
+    height: 996px;
+    margin-top: 200px;
+    background-color: $background-color ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+
+        .title {
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 125%;
+            letter-spacing: 0.02em;
+            color: $text-color;
+            width: 547px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .grid-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 22px;
+        }
+
+        .flip-card {
+            width: 283.55px;
+            height: 433px;
+            perspective: 1000px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+
+        .flip-card-back {
+            background-color: #eaeaea;
+            color: #000;
+            transform: rotateY(180deg);
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 70px;
+
+                h3 {
+                    font-family: $header-font;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.01em;
+                }
+
+                p {
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.01em;
+                    color: $second-text-color;
+                }
+
+                .icons {
+                    display: flex;
+                    margin-top: 65px;
+                    gap: 36px;
+                    align-items: center;
+                }
+
+                .contact-part {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 65px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

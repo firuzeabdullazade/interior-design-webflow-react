@@ -1,53 +1,43 @@
-@import "../../../../../../src/variables";
-
-.counter {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background: $background-color;
-    padding: 138px 0;
-    margin-top: 168px;
-
-    .middle-counter {
-        display: flex;
-        width: 77%;
-        gap: 110px;
-
-        .texts-line {
-            display: flex;
-            gap: 111px;
-            width: 37%;
-
-            .line {
-                border: 1px solid $counter-text-color;
-            }
-
-            .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-
-                .number {
-                    font-family: $header-font;
-                    font-weight: 400;
-                    font-size: 85px;
-                    line-height: 125%;
-                    color: $counter-text-color;
-                    margin-block-start: 0;
-                    margin-block-end: 10px;
-                }
-
-                .text {
-                    font-family: $common-writing-font;
-                    font-weight: 400;
-                    font-size: 22px;
-                    line-height: 150%;
-
-                }
-
-            }
-        }
-    }
+@import "../../../../../variables"; 
+ 
+.counter { 
+  max-width: 1920px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 76px; 
+  margin-top: 200px;
+  padding-top: 138px;
+  padding-bottom: 138px;
+  background-color: $background-color;
+ 
+  .text { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 16px; 
+ 
+    h2 { 
+      font-family: $header-font; 
+      font-weight: 400; 
+      font-size: 85px; 
+      line-height: 106px; 
+      color: $counter-text-color; 
+    } 
+ 
+    h3 { 
+      font-family: $common-writing-font; 
+      font-weight: 400; 
+      font-size: 22px; 
+      line-height: 33px; 
+      color: $second-text-color; 
+    } 
+  } 
+ 
+  .line { 
+    height: 130px; 
+    border: 1px solid $counter-text-color; 
+  } 
 }
