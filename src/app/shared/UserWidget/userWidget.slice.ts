@@ -4,7 +4,7 @@ interface UserWidgetState {
   avatarLink: string;
   name: string;
   status: string;
-}
+};
 
 const initialState: UserWidgetState = {
   avatarLink: '',
@@ -15,7 +15,7 @@ const initialState: UserWidgetState = {
 interface LoadUserPayload {
   name: string;
   status: string;
-}
+};
 
 export const userWidgetSlice = createSlice({
   name: 'userWidget',

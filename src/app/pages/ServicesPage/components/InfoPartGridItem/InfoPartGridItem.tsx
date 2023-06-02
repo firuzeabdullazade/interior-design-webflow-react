@@ -1,4 +1,5 @@
 import './InfoPartGridItem.scss';
+import { Link } from 'react-router-dom';
 import arrow from '../../../../../assets/icons/Vector.svg';
 interface InfoPartGridItemProps {
   head: string;
@@ -11,10 +12,12 @@ export const InfoPartGridItem = (props: InfoPartGridItemProps) => {
     <div className={className}>
       <h2>{head}</h2>
       <h3>{title}</h3>
-      <button>
-        <div className="text">Read More</div>
-        <img src={arrow} alt="" />
-      </button>
+      <Link to="/service-single" className="link">
+        <button>
+          <div className="text">Read More</div>
+          <img src={arrow} alt="" />
+        </button>
+      </Link>
     </div>
   );
 };

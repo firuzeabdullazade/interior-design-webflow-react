@@ -32,6 +32,7 @@ body {
       justify-content: center;
       align-items: center;
       margin-top: 178px;
+      color: $text-color;
 
       h1 {
         font-family: $header-font;
@@ -57,6 +58,14 @@ body {
     line-height: 125%;
     color: white;
     border: 1px solid $text-color;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+
+    &:hover{
+      transform: translateY(-10px);
+    }
+   
   }
 
   .info-card {

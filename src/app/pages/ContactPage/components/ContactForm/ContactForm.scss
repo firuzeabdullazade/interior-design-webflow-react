@@ -1,0 +1,129 @@
+@import '../../../../../variables';
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+
+    h2 {
+        font-family: $header-font;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 75px;
+        color: $text-color;
+        text-align: center;
+
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 55px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 76px 32px;
+            gap: 47px;
+            background: $background-color;
+            border-radius: 50px;
+            width: 350px;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .content-element {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                }
+
+
+
+                h3 {
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $second-text-color;
+
+                }
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                gap: 35px;
+            }
+        }
+
+        .form-button {
+            display: flex;
+            flex-direction: column;
+            gap: 58px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 797px;
+            
+                label {
+                  width: 797px;
+                  border-bottom: 1px solid #afacac;
+                  padding: 12px 0;
+                  font-family: $common-writing-font;
+                  font-weight: 400;
+                  font-size: 25px;
+                  line-height: 33px;
+                  color: $second-text-color;
+            
+                  input {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: $second-text-color;
+                    width: 100%;
+                  }
+                }
+                .comment{
+                    padding-bottom: 130px;
+                    width: 100%;
+                    padding-top: 50px;
+                }
+                p {
+                  font-family: $common-writing-font;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 33px;
+                  color: orangered;
+                }
+                button {
+                  background: $text-color;
+                  width: 250px;
+                  margin-top: 41px;
+                  font-size: 20px;
+                  
+                }
+              }
+        }
+
+    }
+
+}

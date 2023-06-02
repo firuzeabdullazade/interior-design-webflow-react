@@ -38,7 +38,13 @@ export const HomePage = () => {
             (
               project: any, // todo: change any to a data type
             ) => (
-              <Project imageSrc={project.imageSrc} head={project.head} />
+              <Project 
+              projectId={project.projectId}
+              imageSrc={project.imageSrc} 
+              head={project.head} 
+              content={project.content}
+              projectImage={project.projectImage}
+              />
             ),
           )}
         </div>
@@ -52,16 +58,21 @@ export const HomePage = () => {
             page when lookings at its layouts the points of using.
           </h3>
         </div>
-        <div className="grid-articles">
+        <div className="grid-articles-homepage">
           {homePageState.articles.map(
             (
               article: any, // todo: change any to a data type
             ) => (
               <BlogArticle
-                imageSrc={article.imageSrc}
-                tag={article.tag}
-                date={article.date}
-                content={article.content}
+              key={`article-${article.imageSrc}`}
+              imageSrc={article.imageSrc}
+              tag={article.tag}
+              date={article.date}
+              content={article.content}
+              postId={article.postId}
+              firstPostImage={article.firstPostImage}
+              secondPostImage={article.secondPostImage}
+              postContent={article.postContent}
               />
             ),
           )}

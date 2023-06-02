@@ -1,17 +1,26 @@
 import './BlogArticle.scss';
 import { Link } from 'react-router-dom';
+import { stateLoad } from '../../../BlogDetailsPage/blogDetailsPage.slice';
+import { useDispatch } from 'react-redux';
 import vector from '../../../../../assets/icons/vectorImage.svg';
 
 interface BlogArticleProps {
+  postId: number;
   date: string;
   tag: string;
   imageSrc: string;
+  firstPostImage: string;
+  secondPostImage: string;
   content: string;
+  postContent: string;
 }
 
 export const BlogArticle = (props: BlogArticleProps) => {
-  const { date, tag, imageSrc, content } = props;
-
+  const { postId, date, tag, imageSrc, firstPostImage, secondPostImage, content, postContent } = props;
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(stateLoad({ date, postContent, firstPostImage, secondPostImage, postId }));
+  };
   return (
     <>
       <div className="grid-article">
@@ -23,7 +32,7 @@ export const BlogArticle = (props: BlogArticleProps) => {
           <h3>{content}</h3>
           <div className="date-button">
             <div className="date">{date}</div>
-            <Link to="" className="link">
+            <Link to={`/blog/${postId}`} onClick={() => handleClick()} className="link">
               <img src={vector} alt="" />
             </Link>
           </div>

@@ -1,0 +1,42 @@
+@import '../../../../../variables';
+.news-grid-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 85px;
+  .head-of-news {
+    height: 50px;
+    width: 60%;
+    p {
+      font-family: $header-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      text-align: left;
+    }
+  }
+  .date {
+    display: flex;
+    position: absolute;
+    height: 24px;
+    width: 96px;
+    right: 0;
+    top: 55px;
+    font-family: $common-writing-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+  }
+  .line {
+    display: flex;
+    border: 1px solid $counter-text-color;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 85px;
+  }
+}

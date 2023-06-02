@@ -1,5 +1,7 @@
 @import '../../../../../variables';
 
+
+
 .blog-part {
   margin-top: 200px;
   display: flex;
@@ -26,8 +28,35 @@
 
   .grid-articles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .swiper-pagination-bullet {
+      background-color: darkslategray;
+      width: 12px;
+      height: 12px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $counter-text-color;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      color: $counter-text-color;
+    }
+
+    .swiper {
+      padding: 0 38px;
+    }
+
+    .swiper, swiper-container {
+      width: 100%;
+    }
+
+    .swiper-slide.swiper-slide-active {
+      width: 382px;
+    }
 
     .grid-article {
       display: flex;
