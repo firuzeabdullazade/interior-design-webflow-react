@@ -12,6 +12,7 @@ import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
 import React from 'react';
 import { ContactPage } from './app/pages/ContactPage/ContactPage';
 import { BlogPage } from './app/pages/BlogPage/BlogPage';
+import { FilteredPosts } from './app/pages/FilteredPosts/FilteredPosts';
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
           <Route path="login" element={<LoginPage />}></Route>
           <Route path="register" element={<RegisterPage />}></Route>
           <Route path="services" element={<ServicesPage />}></Route>
-          <Route path="blog-details" element={<BlogDetailsPage />}></Route>
+          <Route path="blog/:id" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
-          <Route path="project-details" element = {<ProjectDetails />}></Route> 
           <Route path="contact" element= {<ContactPage />}></Route>
-          <Route path="blog-page" element={<BlogPage />}></Route>
+          <Route path="project-details" element={<ProjectDetails />}></Route>
+          <Route path="blog" element={<BlogPage />}></Route>
+          <Route path="filter" element={<FilteredPosts />}></Route>
         </Routes>
       </main>
       <Footer />

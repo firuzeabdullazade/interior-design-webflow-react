@@ -17,10 +17,6 @@ export const Banner = () => {
                 Embrace individuality and make your home a reflection of your unique style and personality.
               </h3>
             </div>
-            <button>
-              Get Started
-              <img src={arrow} alt="" />
-            </button>
           </div>
         </div>
       </section>
