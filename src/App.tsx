@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ServiceSingle } from './app/pages/ServiceSingle/ServiceSingle';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
 import React from 'react';
+import { ContactPage } from './app/pages/ContactPage/ContactPage';
 import { BlogPage } from './app/pages/BlogPage/BlogPage';
 import { FilteredPosts } from './app/pages/FilteredPosts/FilteredPosts';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="services" element={<ServicesPage />}></Route>
           <Route path="blog/:id" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
+          <Route path="contact" element= {<ContactPage />}></Route>
           <Route path="project-details" element={<ProjectDetails />}></Route>
           <Route path="blog" element={<BlogPage />}></Route>
           <Route path="filter" element={<FilteredPosts />}></Route>
