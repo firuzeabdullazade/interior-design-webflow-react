@@ -18,10 +18,10 @@ export const Header = () => {
         <img src={pageLogo} alt="Page Logo" />
         <div className="nav-icon-part">
           <nav>
-            <Link to="" className="nav-link">
+            <Link to="/homepage" className="nav-link">
               Home
             </Link>
-            <Link to="" className="nav-link">
+            <Link to="/about" className="nav-link">
               About Us
             </Link>
             <Link to="/services" className="nav-link">

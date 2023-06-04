@@ -21,7 +21,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="homepage" element={<HomePage />}></Route>
           <Route path="login" element={<LoginPage />}></Route>
           <Route path="register" element={<RegisterPage />}></Route>
           <Route path="about" element={<AboutPage />}></Route>
@@ -29,7 +29,7 @@ function App() {
           <Route path="blog/:postId" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
           <Route path="contact" element= {<ContactPage />}></Route>
-          <Route path="project-details" element={<ProjectDetails />}></Route>
+          <Route path="homepage/:projectId" element = {<ProjectDetails />}></Route> 
           <Route path="blog" element={<BlogPage />}></Route>
           <Route path="filter" element={<FilteredPosts />}></Route>
         </Routes>
