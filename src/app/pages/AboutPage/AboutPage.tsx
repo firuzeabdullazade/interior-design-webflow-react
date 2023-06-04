@@ -32,7 +32,7 @@ export const AboutPage = () => {
       status: user.status,
     };
 
-    dispatch(loadUser(payload));
+    //dispatch(loadUser(payload));
   };
   return (
     <>

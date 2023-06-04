@@ -1,4 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { ArticlesGridItem } from '../../../models/Article';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 interface DesignSprints {
   order: number;
   title: string;
@@ -17,6 +18,7 @@ interface BlogDetailsPageState {
   news: NewsGridItem[];
   tags: TagsGrid[];
   postState: object;
+  currentArticle?: ArticlesGridItem;
 }
 
 const initialState: BlogDetailsPageState = {
@@ -96,8 +98,11 @@ export const blogDetailsPageSlice = createSlice({
     stateLoad: (state, action) => {
       state.postState = action.payload;
     },
+    setCurrentArticle: (state, action: PayloadAction<ArticlesGridItem>) => {
+      state.currentArticle = action.payload;
+    },
   },
 });
 
-export const { stateLoad } = blogDetailsPageSlice.actions;
+export const { stateLoad, setCurrentArticle } = blogDetailsPageSlice.actions;
 export const blogDetailsPageReducer = blogDetailsPageSlice.reducer;
