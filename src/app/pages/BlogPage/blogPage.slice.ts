@@ -2,18 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import firstLivingRoomImage from '../../../assets/images/firstLivingRoomImage.png';
 import firstPostPicture from '../../../assets/images/firstPostPicture.png';
 import secondLivingRoomImage from '../../../assets/images/secondLivingRoomImage.jpg';
-
-interface ArticlesGridItem {
-  secondPostImage: string;
-  firstPostImage: string;
-  postId: number;
-  date: string;
-  tag: string;
-  imageSrc: string;
-  content: string;
-  postContent: string;
-  shortTag: string;
-}
+import { ArticlesGridItem } from '../../../models/Article';
 
 interface PostsProps {
   postId: number;
@@ -59,11 +48,11 @@ export const blogPageSlice = createSlice({
   name: 'blogPage',
   initialState: initialState,
   reducers: {
-    getArticles: (state, action: PayloadAction<ArticlesGridItem[]>) => {
+    setArticles: (state, action: PayloadAction<ArticlesGridItem[]>) => {
       state.articles = action.payload;
     },
   },
 });
 
-export const { getArticles } = blogPageSlice.actions;
+export const { setArticles } = blogPageSlice.actions;
 export const blogPageReducer = blogPageSlice.reducer;

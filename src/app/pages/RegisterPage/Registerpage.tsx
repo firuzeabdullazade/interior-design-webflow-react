@@ -4,6 +4,10 @@ import './RegisterPage.scss';
 import * as yup from 'yup';
 import { Controller, useForm } from 'react-hook-form';
 import { CustomSelect } from '../../shared/CustomSelect/CustomSelect';
+import { baseUrl } from '../../shared/consts';
+import { loadUser } from '../../shared/UserWidget/userWidget.slice';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 const schema = yup
@@ -22,6 +26,8 @@ const schema = yup
 type FormData = yup.InferType<typeof schema>;
 
 export const RegisterPage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const {
     register,
     control,
@@ -31,8 +37,24 @@ export const RegisterPage = () => {
     resolver: yupResolver(schema),
   });
 
-  // api call will be here a bit later =)
-  const onSubmit = (data: FormData) => console.log(data);
+  const onSubmit = (data: FormData) => {
+    fetch(`${baseUrl}/users`, {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: data.email,
+        password: data.password,
+      }),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        dispatch(loadUser({ firstName: data.firstName, lastName: data.lastName, email: data.email }));
+        navigate('/');
+      });
+  };
 
   const genderOptions = [
     { value: 1, label: 'Male' },
