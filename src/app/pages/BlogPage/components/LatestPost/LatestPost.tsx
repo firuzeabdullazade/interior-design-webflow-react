@@ -1,5 +1,7 @@
 import './LatestPost.scss';
 import { Link } from 'react-router-dom';
+import { stateLoad } from '../../../BlogDetailsPage/blogDetailsPage.slice';
+import { useDispatch } from 'react-redux';
 import vector from '../../../../../assets/icons/vectorImage.svg';
 
 interface PostsProps {
@@ -16,6 +18,10 @@ interface PostsProps {
 
 export const LatestPost = (props: PostsProps) => {
   const { postId, date, tag, imageSrc, firstPostImage, secondPostImage, content, postContent, text } = props;
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(stateLoad({ date, postContent, firstPostImage, secondPostImage, postId }));
+  };
 
   return (
     <>
@@ -28,21 +34,7 @@ export const LatestPost = (props: PostsProps) => {
           </div>
           <div className="date-button">
             <div className="date">{date}</div>
-            <Link
-              to={`/blog/${postId}`}
-              state={{
-                postId,
-                date,
-                tag,
-                imageSrc,
-                firstPostImage,
-                secondPostImage,
-                content,
-                postContent,
-                text,
-              }}
-              className="link"
-            >
+            <Link to={`/blog/${postId}`} onClick={() => handleClick()} className="link">
               <img src={vector} alt="" />
             </Link>
           </div>

@@ -2,14 +2,25 @@ import './UserWidget.scss';
 import { RootState } from '../../../store/store';
 import { useSelector } from 'react-redux';
 export const UserWidget = () => {
-  const userWidgetState = useSelector((state: RootState) => state.userWidget);
+  const currentUser = useSelector((state: RootState) => state.userWidget.currentUser);
   return (
-    <div className="user-widget">
-      <img src={userWidgetState.avatarLink} alt="Avatar" />
-      <div className="personal-info">
-        <div className="user-name">{userWidgetState.name}</div>
-        <div className="user-status">{userWidgetState.status}</div>
-      </div>
-    </div>
+    <>
+      {currentUser ? (
+        <div className="user-widget">
+          <div className="personal-info">
+            <div className="user-name">
+              {currentUser.firstName} {currentUser.lastName}
+            </div>{' '}
+            <div className="avatar">
+              {' '}
+              <img src={currentUser.avatar} alt="" />
+            </div>
+          </div>
+          <div className="user-email">{currentUser.email}</div>
+        </div>
+      ) : (
+        <></>
+      )}
+    </>
   );
 };

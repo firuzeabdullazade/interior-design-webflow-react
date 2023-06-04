@@ -1,34 +1,23 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { User } from '../../../models/User';
 
 interface UserWidgetState {
-  avatarLink: string;
-  name: string;
-  status: string;
+  currentUser?: User;
 }
 
 const initialState: UserWidgetState = {
-  avatarLink: '',
-  name: '',
-  status: '',
+  currentUser: undefined,
 };
-
-interface LoadUserPayload {
-  name: string;
-  status: string;
-}
 
 export const userWidgetSlice = createSlice({
   name: 'userWidget',
   initialState: initialState,
   reducers: {
     logOut: (state) => {
-      state.name = '';
-      state.status = '';
-      state.avatarLink = '';
+      state.currentUser = undefined;
     },
-    loadUser: (state, action: PayloadAction<LoadUserPayload>) => {
-      state.name = action.payload.name;
-      state.status = action.payload.status;
+    loadUser: (state, action: PayloadAction<User>) => {
+      state.currentUser = action.payload;
     },
   },
 });

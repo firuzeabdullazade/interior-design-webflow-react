@@ -1,6 +1,8 @@
 import './LoginPage.scss';
 import * as yup from 'yup';
 import { Link } from 'react-router-dom';
+import { User } from '../../../models/User';
+import { baseUrl } from '../../shared/consts';
 import { loadUser } from '../../shared/UserWidget/userWidget.slice';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
@@ -16,21 +18,6 @@ type FormData = yup.InferType<typeof schema>;
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
-  const onLogInButtonClick = () => {
-    const user = {
-      id: 14,
-      name: 'Benry Roll',
-      email: 'benry.roll@mail.com',
-      status: 'Regular',
-    };
-
-    const payload = {
-      name: user.name,
-      status: user.status,
-    };
-
-    dispatch(loadUser(payload));
-  };
 
   const {
     register,
@@ -41,7 +28,23 @@ export const LoginPage = () => {
   });
 
   // api call will be here a bit later =)
-  const onSubmit = (data: FormData) => console.log(data);
+  const onSubmit = (data: FormData) => {
+    fetch(`${baseUrl}/users/login`, {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: data.email,
+        password: data.password,
+      }),
+    })
+      .then((response) => response.json())
+      .then((user: User) => {
+        dispatch(loadUser(user));
+      });
+  };
   return (
     <div className="login-container">
       <h1>Log in</h1>
