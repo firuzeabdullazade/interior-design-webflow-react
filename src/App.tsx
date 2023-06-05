@@ -29,7 +29,7 @@ function App() {
           <Route path="blog/:postId" element={<BlogDetailsPage />}></Route>
           <Route path="service-single" element={<ServiceSingle />}></Route>
           <Route path="contact" element= {<ContactPage />}></Route>
-          <Route path="project-details" element={<ProjectDetails />}></Route>
+          <Route path="projects/:projectId" element = {<ProjectDetails />}></Route> 
           <Route path="blog" element={<BlogPage />}></Route>
           <Route path="filter" element={<FilteredPosts />}></Route>
         </Routes>
