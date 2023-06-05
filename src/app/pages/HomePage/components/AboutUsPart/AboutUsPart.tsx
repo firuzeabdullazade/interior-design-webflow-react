@@ -23,10 +23,6 @@ export const AboutUsPart = () => {
                 <p>Call Us Anytime</p>
               </div>
             </div>
-            <button>
-              Get Free Estimate
-              <img src={arrow} alt="arrow logo" />
-            </button>
           </div>
         </div>
         <img src={image} alt="" />

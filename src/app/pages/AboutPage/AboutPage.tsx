@@ -61,12 +61,6 @@ export const AboutPage = () => {
               It is a long established fact that a reader will be distracted by the of readable content of a
               page when lookings at its layouts the points of using that it has a more-or-less normal.
             </div>
-            <Link to="">
-              <button>
-                Our Concept
-                <img src={vector} alt="" />
-              </button>
-            </Link>
           </div>
           <div className="photo">
             {' '}
@@ -84,9 +78,9 @@ export const AboutPage = () => {
               It is a long established fact that a reader will be distracted by the of readable content of a
               page when lookings at its layouts the points of using that it has a more-or-less normal.
             </div>
-            <Link to="/project" className="link">
+            <Link to="/services" className="link">
               <button>
-                Our Portfolio
+                Our Concept
                 <img src={vector} alt="" />
               </button>
             </Link>
