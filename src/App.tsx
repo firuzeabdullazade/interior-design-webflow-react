@@ -14,6 +14,7 @@ import { AboutPage } from './app/pages/AboutPage/AboutPage';
 import { ContactPage } from './app/pages/ContactPage/ContactPage';
 import { BlogPage } from './app/pages/BlogPage/BlogPage';
 import { FilteredPosts } from './app/pages/FilteredPosts/FilteredPosts';
+import { ProfilePage } from './app/pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="project-details" element={<ProjectDetails />}></Route>
           <Route path="blog" element={<BlogPage />}></Route>
           <Route path="filter" element={<FilteredPosts />}></Route>
+          <Route path="profile" element={<ProfilePage />}></Route>
         </Routes>
       </main>
       <Footer />
