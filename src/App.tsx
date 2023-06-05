@@ -8,6 +8,7 @@ import { Footer } from './app/components/Footer/Footer';
 import { Header } from './app/components/Header/Header';
 import { HomePage } from './app/pages/HomePage/HomePage';
 import { LoginPage } from './app/pages/LoginPage/LoginPage';
+import { ProfilePage } from './app/pages/ProfilePage/ProfilePage';
 import { ProjectDetails } from './app/pages/ProjectDetails/ProjectDetails';
 import { RegisterPage } from './app/pages/RegisterPage/Registerpage';
 import { Route, Routes } from 'react-router-dom';
@@ -32,6 +33,7 @@ function App() {
           <Route path="projects/:projectId" element={<ProjectDetails />}></Route>
           <Route path="blog" element={<BlogPage />}></Route>
           <Route path="filter" element={<FilteredPosts />}></Route>
+          <Route path="profile" element={<ProfilePage />}></Route>
         </Routes>
       </main>
       <Footer />

@@ -1,143 +1,125 @@
-@import '../../../variables';
+@import "../../../variables";
 
-footer {
-    display: flex; 
-    flex-direction: column; 
-    padding-top: 135px; 
-    gap: 120px; 
-    max-width: 1200px; 
-    margin-left: auto; 
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 134px;
+    max-width: 1200px;
+    margin-left: auto;
     margin-right: auto;
+    margin-top: 135px;
+    margin-bottom: 30px;
 
-    .main-interno {
+    .information {
         display: flex;
+        flex-direction: row;
         align-items: flex-start;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        gap: 132px;
+        justify-content: space-between;
 
-        .interno {
+        .interno-footer {
             display: flex;
             flex-direction: column;
-            width: 26%;
-            gap: 24px;
+            align-items: flex-start;
+            gap: 31px;
+            width: 393px;
 
-            .sub-content {
-                width: 100%;
-                height: 170px;
-                gap: 22px;
+            .subcontent {
                 display: flex;
                 flex-direction: column;
+                gap: 18px;
 
-                .logo {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    img {
-                        width: 177px;
-                        height: 45px;
-                    }
+                img {
+                    width: 177px;
+                    object-fit: cover;
                 }
 
-                .text {
+                h3 {
                     font-family: $common-writing-font;
                     font-weight: 400;
                     font-size: 22px;
-                    line-height: 150%;
+                    line-height: 33px;
+                    color: $second-text-color;
                 }
             }
 
             .icons {
-                width: 52%;
                 display: flex;
-                justify-content: space-around;
-
-                button {
-                    border-style: none;
-                    background-color: #FFFF;
-                }
+                align-items: center;
+                gap: 54px;
             }
         }
 
-
-        .main-pages {
-            display: flex;
-            flex-direction: column;
-            width: 10%;
-
-            .pages {
-                display: flex;
-                flex-direction: column;
-                gap: 9px;
-            }
+        .pages-footer {
+            width: 125px;
         }
 
-        .main-service {
-            display: flex;
-            flex-direction: column;
-
-
-            .service {
-                display: flex;
-                flex-direction: column;
-                gap: 9px;
-            }
+        .service-footer {
+            width: 120px;
         }
 
-        .main-contact {
+        .pages-footer,
+        .service-footer {
             display: flex;
             flex-direction: column;
-            gap: 8%;
-            gap: 26px;
-            width: 22%;
-            height: 296px;
+            align-items: flex-start;
+            gap: 9px;
 
-            .contact-title {
+            h2 {
                 font-family: $header-font;
                 font-weight: 400;
                 font-size: 25px;
-                line-height: 125%;
-                color: #292F36;
+                line-height: 31px;
+                color: $text-color;
+            }
+
+            .link {
+                font-family: $common-writing-font;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 66px;
+                color: $second-text-color;
+                text-decoration: none;
             }
         }
 
-        .contact {
+        .contact-footer {
             display: flex;
             flex-direction: column;
-            gap: 29px;
+            align-items: flex-start;
+            gap: 26px;
+            width: 258px;
 
+            h2 {
+                font-family: $header-font;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 31px;
+                color: $text-color;
+            }
 
+            .address,
+            .email,
+            .phone-number {
+                font-family: $common-writing-font;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+                color: $second-text-color;
+            }
         }
-
-        .link {
-            text-decoration: none;
-            font-family: $common-writing-font;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 300%;
-            color: #4D5053;
-        }
-        
-        p {
-            font-family: $header-font;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 125%;
-            color: rgba(41, 47, 54, 1);
-
-        }
-
     }
 
     .copyright {
-        font-family: $common-writing-font;
+        font-family: "Jost";
         font-weight: 400;
         font-size: 22px;
-        line-height: 150%;
-        color: #4D5053;
+        line-height: 33px;
+        color: $second-text-color;
+        border-top: 1px solid #E5E5E5;
         display: flex;
+        width: 100%;
+        height: 73px;
+        align-items: flex-end;
         justify-content: center;
     }
 }

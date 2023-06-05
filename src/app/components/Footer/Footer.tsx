@@ -1,95 +1,78 @@
-import './Footer.scss';
-import { Link } from 'react-router-dom';
-import IN from '../../../assets/icons/IN.png';
-import fb from '../../../assets/icons/fb.png';
-import insta from '../../../assets/icons/insta.png';
-import logo from '../../../assets/icons/pageLogo.svg';
-import tw from '../../../assets/icons/tw.png';
+import "./Footer.scss";
+import logo from "../../../assets/icons/pageLogo.svg";
+import { Link } from "react-router-dom";
+import facebook from "../../../assets/icons/fb.png";
+import twitter from "../../../assets/icons/tw.png";
+import linkedin from "../../../assets/icons/IN.png";
+import instagram from "../../../assets/icons/insta.png";
+
 export const Footer = () => {
   return (
     <>
       <footer>
-        <div className="main-interno">
-          <div className="interno">
-            <div className="sub-content">
-              <div className="logo">
-                <img src={logo} alt="logo" />
-              </div>
-              <p className="text">It is a long established fact that a reader will be distracted lookings.</p>
+        <div className="information">
+          <div className="interno-footer">
+            <div className="subcontent">
+              <img src={logo} alt="" />
+              <h3>
+                It is a long established fact that a reader will be distracted
+                lookings.
+              </h3>
             </div>
             <div className="icons">
-              <Link to={''}>
-                <img src={fb} alt="fb" />
+              <Link to={""}>
+                <img src={facebook} alt="facebook" />
               </Link>
-              <Link to={''}>
-                <img src={tw} alt="tw" />
+              <Link to={""}>
+                <img src={twitter} alt="twitter" />
               </Link>
-              <Link to={''}>
-                <img src={IN} alt="in" />
+              <Link to={""}>
+                <img src={linkedin} alt="linkedin" />
               </Link>
-              <Link to={''}>
-                <img src={insta} alt="insta" />
-              </Link>
-            </div>
-          </div>
-          <div className="main-pages">
-            <p>Pages</p>
-            <div className="pages">
-              <Link to="/about" className="link">
-                About us
-              </Link>
-              <Link to="" className="link">
-                Our Projects
-              </Link>
-              <Link to="" className="link">
-                Our Team
-              </Link>
-              <Link to="" className="link">
-                Contact us
-              </Link>
-              <Link to="" className="link">
-                Services
+              <Link to={""}>
+                <img src={instagram} alt="instagram" />
               </Link>
             </div>
           </div>
-          <div className="main-service">
-            <p>Service</p>
-            <div className="service">
-              <Link to="" className="link">
-                Kitchan
-              </Link>
-              <Link to="" className="link">
-                Living Area
-              </Link>
-              <Link to="" className="link">
-                Bathroom
-              </Link>
-              <Link to="" className="link">
-                Dinning Hall
-              </Link>
-              <Link to="" className="link">
-                Bedroom
-              </Link>
-            </div>
+          <div className="pages-footer">
+            <h2>Pages</h2>
+            <Link to="" className="link">
+              About us
+            </Link>
+           
+            <Link to="" className="link">
+              Contact us
+            </Link>
+            <Link to="" className="link">
+              Services
+            </Link>
           </div>
-          <div className="main-contact">
-            <p className="contact-title">Contact</p>
-            <div className="contact">
-              <Link to="" className="link">
-                55 East Birchwood Ave. Brooklyn, New York 11201
-              </Link>
-              <Link to="" className="link">
-                contact@interno.com
-              </Link>
-              <Link to="" className="link">
-                (123) 456 - 7890
-              </Link>
-            </div>
+          <div className="service-footer">
+            <h2>Service</h2>
+            <Link to="" className="link">
+              Kitchan
+            </Link>
+            <Link to="" className="link">
+              Living Area
+            </Link>
+            <Link to="" className="link">
+              Bathroom
+            </Link>
+            <Link to="" className="link">
+              Dinning Hall
+            </Link>
+            <Link to="" className="link">
+              Bedroom
+            </Link>
+          </div>
+          <div className="contact-footer">
+            <h2>Contact</h2>
+            <div className="address">55 East Birchwood Ave. Brooklyn, New York 11201 </div>
+            <div className="email">contact@interno.com</div>
+            <div className="phone-number">(123) 456 - 7890</div>
           </div>
         </div>
-        <div className="copyright">
-          Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow
-        </div>
+        <div className="copyright">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</div>
       </footer>
     </>
   );

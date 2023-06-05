@@ -1,0 +1,118 @@
+@import "../../../variables";
+
+.about-intro {
+    margin-top: 45px;
+
+    img {
+        width: 100%;
+    }
+
+    .about-text {
+        display: flex;
+        justify-content: center;
+
+        p {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 503px;
+            height: 197px;
+            top: 317px;
+            background-color: $second-background-color;
+            border-radius: 37px 37px 0px 0px;
+            border: 1px solid $second-background-color;
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 62px;
+            color: $text-color;
+        }
+    }
+}
+
+.userdetails {
+    max-width: 1200px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 45px;
+
+    // .image {
+    //     img {
+    //         width: 570px;
+    //     }
+    // }
+
+
+    .sub-content {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+
+        .name-job {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-family: $header-font;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 150%;
+                letter-spacing: 0.01em;
+                color: $text-color;
+            }
+
+            .job {
+
+                font-family: $common-writing-font;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                letter-spacing: 0.01em;
+                color: $second-text-color;
+            }
+        }
+
+        .aboutuser {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+
+            .usertext {
+                font-family: $common-writing-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+            }
+
+            .usercontact {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .contactdetails {
+                    font-family: $common-writing-font;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.01em;
+                    color: $second-text-color ;
+
+                }
+            }
+            .usericons{
+                display: flex;
+                gap: 35px;
+                padding-left: 16px;
+            }
+        }
+    }
+}
