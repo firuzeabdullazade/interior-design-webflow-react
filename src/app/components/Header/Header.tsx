@@ -18,7 +18,7 @@ export const Header = () => {
         <img src={pageLogo} alt="Page Logo" />
         <div className="nav-icon-part">
           <nav>
-            <Link to="/homepage" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
             </Link>
             <Link to="/about" className="nav-link">

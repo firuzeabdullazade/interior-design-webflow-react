@@ -16,7 +16,7 @@ export const Project = (props: ProjectProps) => {
   return (
     <>
       <Link
-        to={`/homepage/${projectId}`}
+        to={`/projects/${projectId}`}
         state={{
           projectId,
           imageSrc,
