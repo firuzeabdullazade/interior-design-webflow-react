@@ -5,9 +5,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
 
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    .no-post{
+      display: flex;
+      width: 100%;
+      font-family: $header-font;
+      font-size: 45px;
+      text-align: center;
+      color: $counter-text-color;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+    }
 
     .grid-article {
         display: flex;

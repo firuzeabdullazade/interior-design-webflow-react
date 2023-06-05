@@ -8,11 +8,22 @@ import { Counter } from './components/Counter/Counter';
 import { Project } from './components/Project/Project';
 import { RootState } from '../../../store/store';
 import { TestimonialPart } from './components/TestimonialPart/TestimonialPart';
-import { useSelector } from 'react-redux';
 import { WorkPart } from './components/WorkPart/WorkPart';
+import { baseUrl } from '../../shared/consts';
+import { getProjects } from './homePage.slice';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 export const HomePage = () => {
   const homePageState = useSelector((state: RootState) => state.homePage);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    fetch(`${baseUrl}/projects`)
+      .then((response) => response.json())
+      .then((projects) => {
+        dispatch(getProjects(projects));
+      });
+  }, []);
 
   return (
     <>
@@ -38,12 +49,12 @@ export const HomePage = () => {
             (
               project: any, // todo: change any to a data type
             ) => (
-              <Project 
-              projectId={project.projectId}
-              imageSrc={project.imageSrc} 
-              head={project.head} 
-              content={project.content}
-              projectImage={project.projectImage}
+              <Project
+                projectId={project.projectId}
+                imageSrc={project.imageSrc}
+                head={project.head}
+                content={project.content}
+                projectImage={project.projectImage}
               />
             ),
           )}
@@ -64,15 +75,15 @@ export const HomePage = () => {
               article: any, // todo: change any to a data type
             ) => (
               <BlogArticle
-              key={`article-${article.imageSrc}`}
-              imageSrc={article.imageSrc}
-              tag={article.tag}
-              date={article.date}
-              content={article.content}
-              postId={article.postId}
-              firstPostImage={article.firstPostImage}
-              secondPostImage={article.secondPostImage}
-              postContent={article.postContent}
+                key={`article-${article.imageSrc}`}
+                imageSrc={article.imageSrc}
+                tag={article.tag}
+                date={article.date}
+                content={article.content}
+                postId={article.postId}
+                firstPostImage={article.firstPostImage}
+                secondPostImage={article.secondPostImage}
+                postContent={article.postContent}
               />
             ),
           )}

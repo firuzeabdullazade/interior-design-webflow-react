@@ -18,7 +18,7 @@ export const Header = () => {
         <img src={pageLogo} alt="Page Logo" />
         <div className="nav-icon-part">
           <nav>
-            <Link to="" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
             </Link>
             <Link to="/about" className="nav-link">
@@ -33,17 +33,17 @@ export const Header = () => {
             <Link to="/contact" className="nav-link">
               Contact
             </Link>
-            {!userWidgetState.name && (
+            {!userWidgetState.currentUser && (
               <>
                 <Link to="/login" className="nav-link">
                   Login
                 </Link>
               </>
             )}
-            {userWidgetState.name && (
+            {userWidgetState.currentUser && (
               <>
-                <UserWidget />
                 <button onClick={onLogOutClick}>Log out</button>
+                <UserWidget />
               </>
             )}
           </nav>
