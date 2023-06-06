@@ -12,6 +12,7 @@ import twitter from '../../../../../assets/icons/twitter.svg';
 import * as yup from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { Link } from 'react-router-dom';
 
 const schema = yup
   .object({
@@ -90,10 +91,12 @@ export const ContactForm = () => {
                 Hello Iam Intrested in.. <input type="text" {...register('reply')} />
               </label>
               <p className="validation-error">{errors.reply?.message}</p>
-              <button>
+              <Link to="/" className="link">
+               <button>
                 Send now
                 <img src={arrow} alt="" />
               </button>
+              </Link>
             </form>
           </div>
         </div>

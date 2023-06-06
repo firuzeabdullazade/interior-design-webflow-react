@@ -36,14 +36,13 @@ export const Footer = () => {
           </div>
           <div className="pages-footer">
             <h2>Pages</h2>
-            <Link to="" className="link">
+            <Link to="about" className="link">
               About us
             </Link>
-           
-            <Link to="" className="link">
+            <Link to="contact" className="link">
               Contact us
             </Link>
-            <Link to="" className="link">
+            <Link to="services" className="link">
               Services
             </Link>
           </div>

@@ -11,7 +11,7 @@ import { LoginPage } from './app/pages/LoginPage/LoginPage';
 import { ProfilePage } from './app/pages/ProfilePage/ProfilePage';
 import { ProjectDetails } from './app/pages/ProjectDetails/ProjectDetails';
 import { RegisterPage } from './app/pages/RegisterPage/Registerpage';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, ScrollRestoration } from 'react-router-dom';
 import { ServiceSingle } from './app/pages/ServiceSingle/ServiceSingle';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
 import React from 'react';
@@ -19,6 +19,7 @@ import React from 'react';
 function App() {
   return (
     <>
+      {/* <ScrollRestoration /> */}
       <Header />
       <main>
         <Routes>

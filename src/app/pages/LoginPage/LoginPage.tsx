@@ -1,6 +1,6 @@
 import './LoginPage.scss';
 import * as yup from 'yup';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { User } from '../../../models/User';
 import { baseUrl } from '../../shared/consts';
 import { loadUser } from '../../shared/UserWidget/userWidget.slice';
@@ -18,6 +18,7 @@ type FormData = yup.InferType<typeof schema>;
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -43,6 +44,7 @@ export const LoginPage = () => {
       .then((response) => response.json())
       .then((user: User) => {
         dispatch(loadUser(user));
+        navigate('/profile');
       });
   };
   return (

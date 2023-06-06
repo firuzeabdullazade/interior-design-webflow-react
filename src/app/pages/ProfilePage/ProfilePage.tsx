@@ -13,11 +13,11 @@ import web from '../../../assets/images/contacticon3.png';
 export const ProfilePage = () => {
   return (
     <>
-      <div className="about-intro">
-        <img src={ppbanner} alt="bg" />
-        <div className="about-text">
-          <p>Your Profile</p>
+      <div className="hero-back">
+        <div className="intro">
+          <h1>Your Profile</h1>
         </div>
+        <img src={ppbanner} alt="" />
       </div>
       <div className="userdetails">
         <div className="image">
@@ -49,10 +49,19 @@ export const ProfilePage = () => {
               <p className="contactdetails">www.johnspage.com</p>
             </div>
             <div className="usericons">
-              <Link to={''}><img src={insta} alt="" /></Link>
-              <Link to={''}><img src={tw} alt="" /></Link>
-              <Link to={''}> <img src={IN} alt="" /></Link>
-              <Link to={''}><img src={fb} alt="" /></Link>
+              <Link to={''}>
+                <img src={insta} alt="" />
+              </Link>
+              <Link to={''}>
+                <img src={tw} alt="" />
+              </Link>
+              <Link to={''}>
+                {' '}
+                <img src={IN} alt="" />
+              </Link>
+              <Link to={''}>
+                <img src={fb} alt="" />
+              </Link>
             </div>
           </div>
         </div>
