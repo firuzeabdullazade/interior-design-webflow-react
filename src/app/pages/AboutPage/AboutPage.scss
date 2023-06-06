@@ -1,36 +1,5 @@
 @import "../../../variables";
 
-.about-intro {
-    margin-top: 45px;
-
-    img {
-        width: 100%;
-    }
-
-    .about-text {
-        display: flex;
-        justify-content: center;
-
-        p {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 503px;
-            height: 197px;
-            top: 317px;
-            background-color: $second-background-color;
-            border-radius: 37px 37px 0px 0px;
-            border: 1px solid $second-background-color;
-            font-family: $header-font;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 62px;
-            color: $text-color;
-        }
-    }
-}
-
 .mailbox {
     display: flex;
     justify-content: center;

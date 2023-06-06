@@ -50,6 +50,7 @@ export const HomePage = () => {
               project: any, // todo: change any to a data type
             ) => (
               <Project
+                key={`post-${project.projectId}`}
                 projectId={project.projectId}
                 imageSrc={project.imageSrc}
                 head={project.head}

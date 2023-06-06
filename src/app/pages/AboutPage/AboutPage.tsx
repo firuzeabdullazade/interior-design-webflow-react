@@ -1,21 +1,20 @@
 import './AboutPage.scss';
-import banner from '../../../assets/images/BannerofAbout.png';
-import arrow from '../../../assets/icons/Arrow.svg';
-import pattern from '../../../assets/images/Pattern.png';
-import { useDispatch } from 'react-redux';
-import { loadUser } from '../../shared/UserWidget/userWidget.slice';
-import wwdimg from '../../../assets/images/wwd.png';
-import ter from '../../../assets/images/theendresult.png';
 import { Link } from 'react-router-dom';
-import vector from '../../../assets/icons/Vector.svg';
-import levi from '../../../assets/images/team1.png';
-import avery from '../../../assets/images/team2.png';
-import natasha from '../../../assets/images/team3.png';
-import nora from '../../../assets/images/team4.png';
+import { useDispatch } from 'react-redux';
 import IN from '../../../assets/icons/IN.png';
+import arrow from '../../../assets/icons/Arrow.svg';
+import avery from '../../../assets/images/team2.png';
+import banner from '../../../assets/images/BannerofAbout.png';
 import fb from '../../../assets/icons/fb.png';
 import insta from '../../../assets/icons/insta.png';
+import levi from '../../../assets/images/team1.png';
+import natasha from '../../../assets/images/team3.png';
+import nora from '../../../assets/images/team4.png';
+import pattern from '../../../assets/images/Pattern.png';
+import ter from '../../../assets/images/theendresult.png';
 import tw from '../../../assets/icons/tw.png';
+import vector from '../../../assets/icons/Vector.svg';
+import wwdimg from '../../../assets/images/wwd.png';
 
 export const AboutPage = () => {
   const dispatch = useDispatch();
@@ -36,11 +35,11 @@ export const AboutPage = () => {
   };
   return (
     <>
-      <div className="about-intro">
-        <img src={banner} alt="bg" />
-        <div className="about-text">
-          <p>About Us</p>
+      <div className="hero-back">
+        <div className="intro">
+          <h1>About Us</h1>
         </div>
+        <img src={banner} alt="" />
       </div>
       <div className="quotes">
         <img src={pattern} alt="pattern" />
@@ -124,7 +123,7 @@ export const AboutPage = () => {
                 </div>
                 <div className="flip-card-back">
                   <div className="content">
-                    <h3>Charlotte	Levi</h3>
+                    <h3>Charlotte Levi</h3>
                     <p>Design, Australia </p>
                     <div className="icons">
                       <img src={fb} alt="" />
@@ -148,7 +147,7 @@ export const AboutPage = () => {
                 </div>
                 <div className="flip-card-back">
                   <div className="content">
-                    <h3>Avery	Jackson</h3>
+                    <h3>Avery Jackson</h3>
                     <p>Designer, Australia </p>
                     <div className="icons">
                       <img src={fb} alt="" />

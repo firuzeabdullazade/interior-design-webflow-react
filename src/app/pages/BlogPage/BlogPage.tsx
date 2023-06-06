@@ -3,7 +3,6 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import { ArticlesGridItem } from './components/ArticlesGridItem/ArticlesGridItem';
-import { Banner } from './components/Banner/Banner';
 import { LatestPost } from './components/LatestPost/LatestPost';
 import { RootState } from '../../../store/store';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,6 +11,8 @@ import { setArticles } from './blogPage.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
+import background from '../../../assets/images/backgroundBlog.png';
+
 
 export const BlogPage = () => {
   const blogPageState = useSelector((state: RootState) => state.blogPage);
@@ -28,7 +29,12 @@ export const BlogPage = () => {
 
   return (
     <>
-      <Banner />
+         <div className="hero-back">
+        <div className="intro">
+          <h1>Articles & News</h1>
+        </div>
+        <img src={background} alt="" />
+      </div>
       <div className="latest-post">
         <h2>Latest Post</h2>
         {blogPageState.posts.map((post) => (
