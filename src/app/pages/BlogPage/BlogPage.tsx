@@ -13,7 +13,6 @@ import { useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import background from '../../../assets/images/backgroundBlog.png';
 
-
 export const BlogPage = () => {
   const blogPageState = useSelector((state: RootState) => state.blogPage);
 
@@ -29,7 +28,7 @@ export const BlogPage = () => {
 
   return (
     <>
-         <div className="hero-back">
+      <div className="hero-back">
         <div className="intro">
           <h1>Articles & News</h1>
         </div>
@@ -67,9 +66,9 @@ export const BlogPage = () => {
               }}
             >
               {blogPageState.articles.map((article) => (
-                <SwiperSlide>
+                <SwiperSlide
+                  key={`article-${article.postId}`}>
                   <ArticlesGridItem
-                    key={`article-${article.postId}`}
                     imageSrc={article.imageSrc}
                     tag={article.tag}
                     date={article.date}
