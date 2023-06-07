@@ -91,12 +91,11 @@ export const ContactForm = () => {
                 Hello Iam Intrested in.. <input type="text" {...register('reply')} />
               </label>
               <p className="validation-error">{errors.reply?.message}</p>
-              <Link to="/" className="link">
+
                <button>
                 Send now
                 <img src={arrow} alt="" />
               </button>
-              </Link>
             </form>
           </div>
         </div>

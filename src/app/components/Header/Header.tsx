@@ -42,6 +42,7 @@ export const Header = () => {
             )}
             {userWidgetState.currentUser && (
               <>
+                <Link to="/profile" className="nav-link">Profile</Link>
                 <button onClick={onLogOutClick}>Log out</button>
                 <UserWidget />
               </>

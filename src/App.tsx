@@ -15,11 +15,12 @@ import { Route, Routes, ScrollRestoration } from 'react-router-dom';
 import { ServiceSingle } from './app/pages/ServiceSingle/ServiceSingle';
 import { ServicesPage } from './app/pages/ServicesPage/ServicesPage';
 import React from 'react';
+import { ScrollToTop } from './app/components/ScrollToTop';
 
 function App() {
   return (
     <>
-      {/* <ScrollRestoration /> */}
+     <ScrollToTop />
       <Header />
       <main>
         <Routes>
