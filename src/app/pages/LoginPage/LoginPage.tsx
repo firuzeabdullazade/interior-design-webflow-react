@@ -18,8 +18,6 @@ type FormData = yup.InferType<typeof schema>;
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-
   const {
     register,
     handleSubmit,
@@ -44,7 +42,6 @@ export const LoginPage = () => {
       .then((response) => response.json())
       .then((user: User) => {
         dispatch(loadUser(user));
-        navigate('/profile');
       });
   };
   return (
